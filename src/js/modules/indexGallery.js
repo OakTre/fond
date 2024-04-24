@@ -9,7 +9,7 @@ export default () => {
 
   new Swiper(gallery, {
     spaceBetween: 8,
-    slidesPerView: 4,
+    slidesPerView: 'auto',
     watchSlidesProgress: true,
     loopedSlides: 16,
     loop: true,

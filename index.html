@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="description" content="Описание сайта">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="assets/favicon/site.webmanifest">
+    <link rel="mask-icon" href="assets/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <title>Главная | Название сайта</title>
+    <link rel="stylesheet" href="assets/css/style.min.css?v=0.0.0.0">
+  </head>
+  <body class="page-home">
+    <div class="preloader">
+      <div class="preloader__content">
+        <div class="preloader__logo preloader__logo--variant--small-logo">
+          <img class="preloader-logo__img preloader-logo__img--small" src="assets/images/logo-small-colored.svg" alt="">
+          <div class="preloader__logo-foreground preloader__logo-foreground--variant--small-logo"></div>
+        </div>
+        <div class="preloader__logo preloader__logo--variant--text-logo">
+          <img class="preloader-logo__img preloader-logo__img--text" src="assets/images/logo-text.svg" alt="">
+          <div class="preloader__logo-foreground preloader__logo-foreground--variant--text-logo"></div>
+        </div>
+      </div>
+    </div>
+    <div class="page-wrapper">
+
+      <header class="header">
+        <div class="site-container">
+          <div class="header__container">
+            <div class="header__section">
+              <a class="logo header__logo" href="./">
+                <img class="logo__img" src="assets/images/logo.svg">
+              </a>
+            </div>
+            <div class="header__section">
+              <a class="header__link" href="./" data-green="data-green">
+                <svg class="icon icon-verificated" width="16" height="16">
+                  <use xlink:href="assets/images/sprites/sprite-mono.svg#verificated"></use>
+                </svg>Гранты ПАО «Татнефть»
+              </a>
+              <nav class="header__nav nav">
+                <ul class="nav__list">
+                  <li class="nav__item">
+                    <a class="nav__link" href="./projects.html" data-link="data-link">Проекты</a>
+                  </li>
+                  <li class="nav__item">
+                    <a class="nav__link" href="./" data-link="data-link">Контакты</a>
+                  </li>
+                  <li class="nav__item">
+                    <a class="nav__link" href="./" data-link="data-link">О конкурсах</a>
+                  </li>
+                </ul>
+              </nav>
+              <a class="header__tel" href="tel:+7 (8553) 37-36-89" data-grey="data-grey">+7 (8553) 37-36-89</a>
+              <a class="header__btn" href="./" data-green="data-green">Вход<svg class="icon icon-logout" width="22" height="22">
+                  <use xlink:href="assets/images/sprites/sprite-mono.svg#logout"></use>
+                </svg>
+              </a>
+              <button class="header__burger">
+                <svg class="icon icon-burger" width="20" height="20">
+                  <use xlink:href="assets/images/sprites/sprite-mono.svg#burger"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <main class="page-main main">
+        <section class="index-intro">
+          <div class="site-container">
+            <div class="index-intro__container">
+              <div class="index-intro__block index-intro__block--variant--info">
+                <h1 class="index-intro__heading">Истории добра,<span>&nbsp;которые меняют мир</span>
+                </h1>
+                <p class="index-intro__text">С 2016 года наш Грант стал важным источником положительных перемен в Республике Татарстан. Этот уникальный проект — не просто конкурс, это движение, вовлекающее наших граждан в активное решение социальных вызовов.</p>
+                <a class="ui-button ui-button--size--auto ui-button--variant--default-outline index-intro__btn" href="./"><span class="ui-button__icon-wrapper"><svg class="icon icon-arrow-line ui-button__icon" width="24" height="24"><use xlink:href="assets/images/sprites/sprite-mono.svg#arrow-line"></use></svg></span><span class="ui-button__content">Гранты ПАО «Татнефть»</span>
+                </a>
+                <div class="swiper index-intro__slider index-intro__slider--mobile">
+                  <div class="ui-slider-nav index-intro__slider-nav">
+                    <button class="ui-slider-nav__btn ui-slider-nav__btn--prev" type="button">
+                      <svg class="icon icon-arrrow-shevron ui-slider-nav__btn-icon" width="24" height="24">
+                        <use xlink:href="assets/images/sprites/sprite-mono.svg#arrrow-shevron"></use>
+                      </svg>
+                    </button>
+                    <button class="ui-slider-nav__btn ui-slider-nav__btn--next" type="button">
+                      <svg class="icon icon-arrrow-shevron ui-slider-nav__btn-icon" width="24" height="24">
+                        <use xlink:href="assets/images/sprites/sprite-mono.svg#arrrow-shevron"></use>
+                      </svg>
+                    </button>
+                  </div>
+                  <div class="swiper-pagination"></div>
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <picture>
+                        <source type="image/webp" data-srcset="assets/images/index/slider-img1.webp" alt="Описание картинки" srcset="assets/images/placeholder.png">
+                        <img class="lazyload" data-src="assets/images/index/slider-img1.jpg" src="#" alt="Описание картинки">
+                      </picture>
+                    </div>
+                    <div class="swiper-slide">
+                      <picture>
+                        <source type="image/webp" data-srcset="assets/images/index/slider-img2.webp" alt="Описание картинки" srcset="assets/images/placeholder.png">
+                        <img class="lazyload" data-src="assets/images/index/slider-img2.jpg" src="#" alt="Описание картинки">
+                      </picture>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="index-intro__block index-intro__block--variant--sliders">
+                <div class="ui-tag index-intro__tag">
+                  <div class="ui-tag__icon-wrapper">
+                    <svg class="icon icon-verificated ui-tag__icon" width="18" height="18">
+                      <use xlink:href="assets/images/sprites/sprite-mono.svg#verificated"></use>
+                    </svg>
+                  </div>
+                  <div class="ui-tag__content">Поддерживаем научные проекты</div>
+                </div>
+                <div class="swiper index-intro__slider index-intro-slider">
+                  <div class="ui-slider-nav index-intro__slider-nav">
+                    <button class="ui-slider-nav__btn ui-slider-nav__btn--prev" type="button">
+                      <svg class="icon icon-arrrow-shevron ui-slider-nav__btn-icon" width="24" height="24">
+                        <use xlink:href="assets/images/sprites/sprite-mono.svg#arrrow-shevron"></use>
+                      </svg>
+                    </button>
+                    <button class="ui-slider-nav__btn ui-slider-nav__btn--next" type="button">
+                      <svg class="icon icon-arrrow-shevron ui-slider-nav__btn-icon" width="24" height="24">
+                        <use xlink:href="assets/images/sprites/sprite-mono.svg#arrrow-shevron"></use>
+                      </svg>
+                    </button>
+                  </div>
+                  <div class="swiper-pagination"></div>
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <picture>
+                        <source type="image/webp" data-srcset="assets/images/index/slider-img1.webp" alt="Описание картинки" srcset="assets/images/placeholder.png">
+                        <img class="lazyload" data-src="assets/images/index/slider-img1.jpg" src="#" alt="Описание картинки">
+                      </picture>
+                    </div>
+                    <div class="swiper-slide">
+                      <picture>
+                        <source type="image/webp" data-srcset="assets/images/index/slider-img2.webp" alt="Описание картинки" srcset="assets/images/placeholder.png">
+                        <img class="lazyload" data-src="assets/images/index/slider-img2.jpg" src="#" alt="Описание картинки">
+                      </picture>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="mission">
+          <div class="site-container">
+            <div class="mission__container">
+              <div class="mission__map">
+                <picture>
+                  <source type="image/webp" data-srcset="assets/images/index/map.webp" alt="Описание картинки" srcset="assets/images/placeholder.png">
+                  <img class="lazyload mission__map-bg" data-src="assets/images/index/map.png" src="#" alt="Описание картинки">
+                </picture>
+                <div class="mission__map-item" style="bottom: 10%; left: 10%">
+                  <picture>
+                    <source type="image/webp" data-srcset="assets/images/index/map-item.webp" alt="Описание картинки" srcset="assets/images/placeholder.png">
+                    <img class="lazyload" data-src="assets/images/index/map-item.png" src="#" alt="Описание картинки">
+                  </picture>
+                </div>
+                <div class="mission__map-item" style="bottom: 40%; left: 45%">
+                  <picture>
+                    <source type="image/webp" data-srcset="assets/images/index/map-item1.webp" alt="Описание картинки" srcset="assets/images/placeholder.png">
+                    <img class="lazyload" data-src="assets/images/index/map-item1.png" src="#" alt="Описание картинки">
+                  </picture>
+                </div>
+              </div>
+              <div class="mission__legend">Миссия нашего фонда</div>
+              <div class="mission__info">
+                <h2 class="mission__heading">Мы поддерживаем проекты, направленные на развитие нашего региона, и прилагаем все усилия для улучшения качества жизни людей.</h2>
+                <div class="mission__boxes">
+                  <div class="mission__box">
+                    <div class="mission__box-label">1326</div>
+                    <div class="mission__box-txt">проектов поддержано нашим фондом</div>
+                  </div>
+                  <div class="mission__box">
+                    <div class="mission__box-label">8150</div>
+                    <div class="mission__box-txt">людей получили помощь от нашего фонда</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="care">
+          <div class="site-container">
+            <div class="care__container">
+              <h2 class="care__heading">С заботой о людях</h2>
+              <div class="swiper care__slider">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide care__slide-box">
+                    <picture>
+                      <source type="image/webp" data-srcset="assets/images/index/care-img1.webp" alt="Описание картинки" srcset="assets/images/placeholder.png">
+                      <img class="lazyload care__slide" data-src="assets/images/index/care-img1.jpg" src="#" alt="Описание картинки">
+                    </picture>
+                  </div>
+                  <div class="swiper-slide care__slide-box">
+                    <picture>
+                      <source type="image/webp" data-srcset="assets/images/index/care-img2.webp" alt="Описание картинки" srcset="assets/images/placeholder.png">
+                      <img class="lazyload care__slide" data-src="assets/images/index/care-img2.jpg" src="#" alt="Описание картинки">
+                    </picture>
+                  </div>
+                  <div class="swiper-slide care__slide-box">
+                    <picture>
+                      <source type="image/webp" data-srcset="assets/images/index/care-img3.webp" alt="Описание картинки" srcset="assets/images/placeholder.png">
+                      <img class="lazyload care__slide" data-src="assets/images/index/care-img3.jpg" src="#" alt="Описание картинки">
+                    </picture>
+                  </div>
+                  <div class="swiper-slide care__slide-box">
+                    <picture>
+                      <source type="image/webp" data-srcset="assets/images/index/care-img4.webp" alt="Описание картинки" srcset="assets/images/placeholder.png">
+                      <img class="lazyload care__slide" data-src="assets/images/index/care-img4.jpg" src="#" alt="Описание картинки">
+                    </picture>
+                  </div>
+                  <div class="swiper-slide care__slide-box">
+                    <picture>
+                      <source type="image/webp" data-srcset="assets/images/index/care-img5.webp" alt="Описание картинки" srcset="assets/images/placeholder.png">
+                      <img class="lazyload care__slide" data-src="assets/images/index/care-img5.jpg" src="#" alt="Описание картинки">
+                    </picture>
+                  </div>
+                </div>
+              </div>
+              <div class="care__info">
+                <p class="care__text">Наш подход строится на открытом диалоге с местным сообществом и заинтересованными сторонами. Мы работаем в партнерстве с муниципальными властями, реализуя проекты по улучшению инфраструктуры городов и поселков наших регионов.</p>
+                <p class="care__text">Кроме того, мы активно участвуем в строительстве социально значимых объектов, организации культурных мероприятий, помогаем представителям здравооохранения и просто неравнодушным гражданам.</p>
+                <a class="ui-button ui-button--size--auto ui-button--variant--default-outline care__info-btn" href="./"><span class="ui-button__icon-wrapper"><svg class="icon icon-arrow-line ui-button__icon" width="24" height="24"><use xlink:href="assets/images/sprites/sprite-mono.svg#arrow-line"></use></svg></span><span class="ui-button__content">Подробнее о гранте</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="section projects-list">
+          <div class="site-container">
+            <div class="cards-columns">
+              <div class="cards-columns__column">
+                <div class="card card--variant--is-no-link card--size--normal">
+                  <div class="card__image-icon-wrapper">
+                    <picture>
+                      <source type="image/webp" data-srcset="assets/images/thumb.webp" alt="Описание картинки" srcset="assets/images/placeholder.png">
+                      <img class="lazyload card__image-icon" data-src="assets/images/thumb.png" src="#" alt="Описание картинки">
+                    </picture>
+                  </div>
+                  <div class="card__descr-label"><span>1326</span>
+                  </div><span class="card__descr"><span class="card__descr-text">Проектов поддержано благотворительным фондом ПАО «Татнефть»</span>
+                  </span>
+                </div>
+                <article class="card card--variant--is-full-img card--size--small">
+                  <div class="card__bg card__bg--is-image">
+                    <picture>
+                      <source type="image/webp" data-srcset="assets/images/card-orkestr.webp" alt="Описание картинки" srcset="assets/images/placeholder.png">
+                      <img class="lazyload card__bg-image" data-src="assets/images/card-orkestr.jpg" src="#" alt="Описание картинки">
+                    </picture>
+                  </div>
+                  <h3 class="card__heading">
+                    <a href="./">Культура</a>
+                  </h3>
+                  <div class="ui-button ui-button--size--auto ui-button--variant--default card__btn" href=""><span class="ui-button__icon-wrapper"><svg class="icon icon-arrow-line ui-button__icon" width="24" height="24"><use xlink:href="assets/images/sprites/sprite-mono.svg#arrow-line"></use></svg></span><span class="ui-button__content">Подробнее о культуре</span>
+                  </div>
+                </article>
+                <a class="card card--variant--is-no-link card--size--normal card--variant--is-green" href="./">
+                  <div class="card__bg">
+                    <div class="card__bg-circle-1"></div>
+                    <div class="card__bg-circle-2"></div>
+                  </div>
+                  <div class="card__image-icon-wrapper">
+                    <picture>
+                      <source type="image/webp" data-srcset="assets/images/trophy.webp" alt="Описание картинки" srcset="assets/images/placeholder.png">
+                      <img class="lazyload card__image-icon" data-src="assets/images/trophy.png" src="#" alt="Описание картинки">
+                    </picture>
+                  </div>
+                  <div class="card__descr-label"><span>10</span>&nbsp;номинаций</div><span class="card__descr"><span class="card__descr-text">Разработано благотворительным фондом ПАО «Татнефть» для конкурсов и грантов</span>
+                  </span>
+                </a>
+                <article class="card card--variant--is-full-img card--size--max">
+                  <div class="card__bg card__bg--is-image">
+                    <picture>
+                      <source type="image/webp" data-srcset="assets/images/teacher.webp" alt="Описание картинки" srcset="assets/images/placeholder.png">
+                      <img class="lazyload card__bg-image" data-src="assets/images/teacher.jpg" src="#" alt="Описание картинки">
+                    </picture>
+                  </div>
+                  <h3 class="card__heading">
+                    <a href="./">Инклюзия</a>
+                  </h3>
+                  <div class="ui-button ui-button--size--auto ui-button--variant--default card__btn" href=""><span class="ui-button__icon-wrapper"><svg class="icon icon-arrow-line ui-button__icon" width="24" height="24"><use xlink:href="assets/images/sprites/sprite-mono.svg#arrow-line"></use></svg></span><span class="ui-button__content">Подробнее об инклюзии</span>
+                  </div>
+                </article>
+                <article class="card card--size--max card--variant--with-image">
+                  <div class="card__bg card__bg--is-image">
+                    <picture>
+                      <source type="image/webp" data-srcset="assets/images/card-image-girl2.webp" alt="Описание картинки" srcset="assets/images/placeholder.png">
+                      <img class="lazyload card__bg-image" data-src="assets/images/card-image-girl2.jpg" src="#" alt="Описание картинки">
+                    </picture>
+                  </div>
+                  <div class="ui-tag card__tag">
+                    <div class="ui-tag__content">Культура</div>
+                  </div>
+
+                  <header class="card__info">
+                    <h3 class="card__heading">
+                      <a href="./">Инклюзивная танцевальная школа Рубаха</a>
+                    </h3>
+                    <p class="card__text">В первый день зимы, 1 декабря 2022 года, в стенахнашего Дворца культуры прошел Всероссийский фестиваль интегральноготворчества для людей с ограниченными возможностями здоровья — «ЛУЧ — 2022.</p>
+                    <div class="ui-button ui-button--size--auto ui-button--variant--default card__btn" href=""><span class="ui-button__icon-wrapper"><svg class="icon icon-arrow-line ui-button__icon" width="24" height="24"><use xlink:href="assets/images/sprites/sprite-mono.svg#arrow-line"></use></svg></span><span class="ui-button__content">Подробнее о проекте</span>
+                    </div>
+                  </header>
+                </article>
+              </div>
+              <div class="cards-columns__column">
+                <article class="card card--variant--is-full-img card--size--medium">
+                  <div class="card__bg card__bg--is-image">
+                    <picture>
+                      <source type="image/webp" data-srcset="assets/images/student.webp" alt="Описание картинки" srcset="assets/images/placeholder.png">
+                      <img class="lazyload card__bg-image" data-src="assets/images/student.jpg" src="#" alt="Описание картинки">
+                    </picture>
+                  </div>
+                  <h3 class="card__heading">
+                    <a href="./">Образование и наука</a>
+                  </h3>
+                  <div class="ui-button ui-button--size--auto ui-button--variant--default card__btn" href=""><span class="ui-button__icon-wrapper"><svg class="icon icon-arrow-line ui-button__icon" width="24" height="24"><use xlink:href="assets/images/sprites/sprite-mono.svg#arrow-line"></use></svg></span><span class="ui-button__content">Подробнее о науке</span>
+                  </div>
+                </article>
+                <div class="card card--variant--is-no-link card--size--normal">
+                  <div class="card__image-icon-wrapper">
+                    <picture>
+                      <source type="image/webp" data-srcset="assets/images/map.webp" alt="Описание картинки" srcset="assets/images/placeholder.png">
+                      <img class="lazyload card__image-icon" data-src="assets/images/map.png" src="#" alt="Описание картинки">
+                    </picture>
+                  </div>
+                  <div class="card__descr-label"><span>15</span>регионов</div><span class="card__descr"><svg class="icon icon-pin" width="16" height="16"><use xlink:href="assets/images/sprites/sprite-mono.svg#pin"></use></svg><span class="card__descr-text">география конкурса</span>
+                  </span>
+                </div>
+                <article class="card card--variant--is-full-img card--size--max">
+                  <div class="card__bg card__bg--is-image">
+                    <picture>
+                      <source type="image/webp" data-srcset="assets/images/field.webp" alt="Описание картинки" srcset="assets/images/placeholder.png">
+                      <img class="lazyload card__bg-image" data-src="assets/images/field.jpg" src="#" alt="Описание картинки">
+                    </picture>
+                  </div>
+                  <h3 class="card__heading">
+                    <a href="./">Развитие территории и экология</a>
+                  </h3>
+                  <div class="ui-button ui-button--size--auto ui-button--variant--default card__btn" href=""><span class="ui-button__icon-wrapper"><svg class="icon icon-arrow-line ui-button__icon" width="24" height="24"><use xlink:href="assets/images/sprites/sprite-mono.svg#arrow-line"></use></svg></span><span class="ui-button__content">Подробнее об экологии</span>
+                  </div>
+                </article>
+                <a class="card card--variant--is-no-link card--size--normal card--variant--is-dark" href="./">
+                  <div class="card__bg">
+                    <div class="card__bg-circle-1"></div>
+                    <div class="card__bg-circle-2"></div>
+                  </div>
+                  <div class="card__image-icon-wrapper">
+                    <picture>
+                      <source type="image/webp" data-srcset="assets/images/ruble2.webp" alt="Описание картинки" srcset="assets/images/placeholder.png">
+                      <img class="lazyload card__image-icon" data-src="assets/images/ruble2.png" src="#" alt="Описание картинки">
+                    </picture>
+                  </div>
+                  <div class="card__descr-label"><span>3,5</span>&nbsp;млрд руб.</div><span class="card__descr"><span class="card__descr-text">Общая сумма выплат Фондом участникам благотворительных программ</span>
+                  </span>
+                </a>
+              </div>
+              <div class="cards-columns__column">
+                <article class="card card--variant--is-dark card--variant--is-img-icon">
+                  <p class="card__heading-text">В первый день зимы, 1 декабря 2022 года, в стенахнашего Дворца культуры прошел Всероссийский фестиваль интегральноготворчества для людей с ограниченными возможностями здоровья — «ЛУЧ — 2022.</p>
+                  <div class="card__image-icon-wrapper">
+                    <picture>
+                      <source type="image/webp" data-srcset="assets/images/icon-heart2.webp" alt="Описание картинки" srcset="assets/images/placeholder.png">
+                      <img class="lazyload card__image-icon" data-src="assets/images/icon-heart2.png" src="#" alt="Описание картинки">
+                    </picture>
+                  </div>
+                  <a class="ui-button ui-button--size--auto ui-button--variant--default card__btn" href="./"><span class="ui-button__icon-wrapper"><svg class="icon icon-cup ui-button__icon" width="24" height="24"><use xlink:href="assets/images/sprites/sprite-mono.svg#cup"></use></svg></span><span class="ui-button__content">Подробнее о проекте</span>
+                  </a>
+                </article>
+                <article class="card card--variant--is-full-img card--size--small">
+                  <div class="card__bg card__bg--is-image">
+                    <picture>
+                      <source type="image/webp" data-srcset="assets/images/people.webp" alt="Описание картинки" srcset="assets/images/placeholder.png">
+                      <img class="lazyload card__bg-image" data-src="assets/images/people.jpg" src="#" alt="Описание картинки">
+                    </picture>
+                  </div>
+                  <h3 class="card__heading">
+                    <a href="./">Люди</a>
+                  </h3>
+                  <div class="ui-button ui-button--size--auto ui-button--variant--default card__btn" href=""><span class="ui-button__icon-wrapper"><svg class="icon icon-arrow-line ui-button__icon" width="24" height="24"><use xlink:href="assets/images/sprites/sprite-mono.svg#arrow-line"></use></svg></span><span class="ui-button__content">Подробнее о людях</span>
+                  </div>
+                </article>
+                <div class="card card--variant--is-no-link card--size--normal">
+                  <div class="card__image-icon-wrapper">
+                    <picture>
+                      <source type="image/webp" data-srcset="assets/images/thumb.webp" alt="Описание картинки" srcset="assets/images/placeholder.png">
+                      <img class="lazyload card__image-icon" data-src="assets/images/thumb.png" src="#" alt="Описание картинки">
+                    </picture>
+                  </div>
+                  <div class="card__descr-label"><span>7681</span>заявка</div><span class="card__descr"><span class="card__descr-text">Подана участниками на участие в конкурсах социальных инициатив и грантов</span>
+                  </span>
+                </div>
+                <article class="card card--variant--is-full-img card--size--max">
+                  <div class="card__bg card__bg--is-image">
+                    <picture>
+                      <source type="image/webp" data-srcset="assets/images/card-image-girl2.webp" alt="Описание картинки" srcset="assets/images/placeholder.png">
+                      <img class="lazyload card__bg-image" data-src="assets/images/card-image-girl2.jpg" src="#" alt="Описание картинки">
+                    </picture>
+                  </div>
+                  <h3 class="card__heading">
+                    <a href="./">Здравоохранение и спорт</a>
+                  </h3>
+                  <div class="ui-button ui-button--size--auto ui-button--variant--default card__btn" href=""><span class="ui-button__icon-wrapper"><svg class="icon icon-arrow-line ui-button__icon" width="24" height="24"><use xlink:href="assets/images/sprites/sprite-mono.svg#arrow-line"></use></svg></span><span class="ui-button__content">Подробнее о cпорте</span>
+                  </div>
+                </article>
+              </div>
+            </div>
+            <div class="cards-columns-mobile">
+              <article class="card card--size--normal card--variant--with-image">
+                <div class="card__bg card__bg--is-image">
+                  <picture>
+                    <source type="image/webp" data-srcset="assets/images/card-image-girl.webp" alt="Описание картинки" srcset="assets/images/placeholder.png">
+                    <img class="lazyload card__bg-image" data-src="assets/images/card-image-girl.jpg" src="#" alt="Описание картинки">
+                  </picture>
+                </div>
+                <div class="ui-tag card__tag">
+                  <div class="ui-tag__content">Образование и наука</div>
+                </div>
+
+                <header class="card__info">
+                  <h3 class="card__heading">
+                    <a href="./">Ремонт и оснащение классов химии, физики, информатики и биологии</a>
+                  </h3>
+                  <p class="card__text">В первый день зимы, 1 декабря 2022 года, в стенахнашего Дворца культуры прошел Всероссийский фестиваль интегральноготворчества для людей с ограниченными возможностями здоровья — «ЛУЧ — 2022.</p>
+                  <div class="ui-button ui-button--size--auto ui-button--variant--default card__btn" href=""><span class="ui-button__icon-wrapper"><svg class="icon icon-arrow-line ui-button__icon" width="24" height="24"><use xlink:href="assets/images/sprites/sprite-mono.svg#arrow-line"></use></svg></span><span class="ui-button__content">Подробнее о проекте</span>
+                  </div>
+                </header>
+              </article>
+              <article class="card card--size--normal card--variant--is-green">
+                <div class="card__bg">
+                  <div class="card__bg-circle-1"></div>
+                  <div class="card__bg-circle-2"></div>
+                </div>
+                <div class="ui-tag card__tag">
+                  <div class="ui-tag__content">Культура</div>
+                </div>
+
+                <header class="card__info">
+                  <h3 class="card__heading">
+                    <a href="./">Инклюзивная танцевальная школа Рубаха</a>
+                  </h3>
+                  <p class="card__text">В первый день зимы, 1 декабря 2022 года, в стенахнашего Дворца культуры прошел Всероссийский фестиваль интегральноготворчества для людей с ограниченными возможностями здоровья — «ЛУЧ — 2022.</p>
+                  <div class="ui-button ui-button--size--auto ui-button--variant--default-outline card__btn" href=""><span class="ui-button__icon-wrapper"><svg class="icon icon-arrow-line ui-button__icon" width="24" height="24"><use xlink:href="assets/images/sprites/sprite-mono.svg#arrow-line"></use></svg></span><span class="ui-button__content">Подробнее о проекте</span>
+                  </div>
+                </header>
+              </article>
+              <article class="card card--size--normal card--variant--with-image">
+                <div class="card__bg card__bg--is-image">
+                  <picture>
+                    <source type="image/webp" data-srcset="assets/images/cat.webp" alt="Описание картинки" srcset="assets/images/placeholder.png">
+                    <img class="lazyload card__bg-image" data-src="assets/images/cat.jpg" src="#" alt="Описание картинки">
+                  </picture>
+                </div>
+                <div class="ui-tag card__tag">
+                  <div class="ui-tag__content">Развитие территорий и экология</div>
+                </div>
+
+                <header class="card__info">
+                  <h3 class="card__heading">
+                    <a href="./">Формирование сообщества (приюта) передержки бездомных животных</a>
+                  </h3>
+                  <p class="card__text">В первый день зимы, 1 декабря 2022 года, в стенахнашего Дворца культуры прошел Всероссийский фестиваль интегральноготворчества для людей с ограниченными возможностями здоровья — «ЛУЧ — 2022.</p>
+                  <div class="ui-button ui-button--size--auto ui-button--variant--default card__btn" href=""><span class="ui-button__icon-wrapper"><svg class="icon icon-arrow-line ui-button__icon" width="24" height="24"><use xlink:href="assets/images/sprites/sprite-mono.svg#arrow-line"></use></svg></span><span class="ui-button__content">Подробнее о проекте</span>
+                  </div>
+                </header>
+              </article>
+              <article class="card card--size--normal card--variant--is-dark">
+                <div class="card__bg">
+                  <div class="card__bg-circle-1"></div>
+                  <div class="card__bg-circle-2"></div>
+                </div>
+                <div class="ui-tag card__tag">
+                  <div class="ui-tag__content">Развитие территорий и экология</div>
+                </div>
+
+                <header class="card__info">
+                  <h3 class="card__heading">
+                    <a href="./">Центр досуга для инвалидов Мечта</a>
+                  </h3>
+                  <p class="card__text">В первый день зимы, 1 декабря 2022 года, в стенахнашего Дворца культуры прошел Всероссийский фестиваль интегральноготворчества для людей с ограниченными возможностями здоровья — «ЛУЧ — 2022.</p>
+                  <div class="ui-button ui-button--size--auto ui-button--variant--default card__btn" href=""><span class="ui-button__icon-wrapper"><svg class="icon icon-arrow-line ui-button__icon" width="24" height="24"><use xlink:href="assets/images/sprites/sprite-mono.svg#arrow-line"></use></svg></span><span class="ui-button__content">Подробнее о проекте</span>
+                  </div>
+                </header>
+              </article>
+              <article class="card card--size--medium card--variant--is-dark">
+                <div class="card__bg">
+                  <div class="card__bg-circle-1"></div>
+                  <div class="card__bg-circle-2"></div>
+                </div>
+                <div class="ui-tag card__tag">
+                  <div class="ui-tag__content">Здравоохранение и спорт</div>
+                </div>
+
+                <header class="card__info">
+                  <h3 class="card__heading">
+                    <a href="./">Капитальный ремонт здания медицинской организации</a>
+                  </h3>
+                  <p class="card__text">Проведение капитального ремонта здания медицинской организацииспособствует улучшению условий работы персонала, создает комфортнуюобстановку для пациентов и способствует повышению престижа учреждения.</p>
+                  <div class="ui-button ui-button--size--auto ui-button--variant--default card__btn" href=""><span class="ui-button__icon-wrapper"><svg class="icon icon-arrow-line ui-button__icon" width="24" height="24"><use xlink:href="assets/images/sprites/sprite-mono.svg#arrow-line"></use></svg></span><span class="ui-button__content">Подробнее о проекте</span>
+                  </div>
+                </header>
+              </article>
+            </div>
+            <button class="ui-button ui-button--size--full ui-button--variant--big projects-list__load-button"><span class="ui-button__icon-wrapper"><svg class="icon icon-arrow-line ui-button__icon" width="24" height="24"><use xlink:href="assets/images/sprites/sprite-mono.svg#arrow-line"></use></svg></span><span class="ui-button__content">Загрузить еще</span>
+            </button>
+          </div>
+        </section>
+        <section class="got-an-idea">
+          <div class="site-container">
+            <div class="got-an-idea__container">
+              <div class="got-an-idea__block">
+                <h2 class="got-an-idea__heading">Есть&nbsp;идея<br><span>проекта?</span>
+                </h2>
+                <div class="got-an-idea__imgs">
+                  <picture>
+                    <source type="image/webp" data-srcset="assets/images/index/class.webp" alt="Описание картинки" srcset="assets/images/placeholder.png">
+                    <img class="lazyload got-an-idea__img" data-src="assets/images/index/class.jpg" src="#" alt="Описание картинки">
+                  </picture>
+                  <picture>
+                    <source type="image/webp" data-srcset="assets/images/index/child.webp" alt="Описание картинки" srcset="assets/images/placeholder.png">
+                    <img class="lazyload got-an-idea__img" data-src="assets/images/index/child.jpg" src="#" alt="Описание картинки">
+                  </picture>
+                </div>
+              </div>
+              <div class="got-an-idea__block">
+                <h3 class="got-an-idea__small-heading">Участвуйте в конкурсе грантов</h3>
+                <div class="got-an-idea__text">
+                  <p>Для консультации по проекту свяжитесь с нами по почте  <a href="mailto:grants@bf-tatneft.ru">grants@bf-tatneft.ru</a>или позвоните по телефону<a href="mailto:+7 (8553) 38-71-37">+7 (8553) 38-71-37</a>.</p>
+                  <p>Специалисты фонда подскажут, с чего начать и как правильно оформить грант.</p>
+                </div>
+                <div class="got-an-idea__text">
+                  <p>Подать заявку, ознакомиться с положениями и результатами конкурса можно на основном сайте Фонда</p>
+                </div>
+                <a class="ui-button ui-button--size--auto ui-button--variant--default-outline got-an-idea__btn" href="./"><span class="ui-button__icon-wrapper"><svg class="icon icon-arrow-line ui-button__icon" width="24" height="24"><use xlink:href="assets/images/sprites/sprite-mono.svg#arrow-line"></use></svg></span><span class="ui-button__content">Читать подробнее</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <div class="site-container">
+          <div class="footer__container">
+            <div class="footer__section">
+              <a class="logo footer__logo" href="./">
+                <img class="logo__img" src="assets/images/logo.svg">
+              </a>
+            </div>
+            <div class="footer__section">
+              <div class="footer__list">
+                <a class="footer__item" href="./" data-link="data-link">Проекты</a>
+                <a class="footer__item" href="./" data-link="data-link">Сайт БФ Татнефть</a>
+                <a class="footer__item" href="./" data-link="data-link">Подробная информация о грантах Фонда</a>
+              </div>
+              <div class="footer__list-wrapper">
+                <div class="footer__list">
+                  <div class="footer__item footer__item--label">Программа Гранты</div>
+                  <a class="footer__item" href="./" data-link="data-link">grants@bf-tatneft.ru</a>
+                  <a class="footer__item" href="tel:+7 (8553) 38-71-37" data-link="data-link">+7 (8553) 38-71-37</a>
+                  <a class="footer__item" href="tel:+7 (987) 210-03-80" data-link="data-link">+7 (8553) 38-71-37</a>
+                </div>
+                <div class="footer__list">
+                  <div class="footer__item footer__item--label">Приемная</div>
+                  <a class="footer__item" href="mailto:fond@bf-tatneft.ru" data-link="data-link">fond@bf-tatneft.ru</a>
+                  <a class="footer__item" href="tel:+7 (8553) 37-36-89" data-link="data-link">+7 (8553) 37-36-89</a>
+                  <a class="footer__item" href="tel:+7 (8553) 45-69-06" data-link="data-link">+7 (8553) 45-69-06</a>
+                </div>
+              </div>
+              <div class="footer__list">
+                <div class="footer__item footer__item--offset">423450, Респ. Татарстан, Альметьевский р-н, г.&nbsp;Альметьевск, ул. Заслонова, дом 20</div>
+                <div class="footer__payment-info">
+                  <ul>
+                    <li>ИНН: 1644017196</li>
+                    <li>КПП: 164401001</li>
+                    <li>ОГРН: 1021601626199</li>
+                    <li>ОКПО: 42130857</li>
+                  </ul>
+                  <ul>
+                    <li>Расчетный счет: 40703810100730001062</li>
+                    <li>Банк: ПАО БАНК ЗЕНИТ</li>
+                    <li>БИК: 044525272</li>
+                    <li>Корр. счет: 30101810000000000272</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <div class="modal">
+      <div class="modal__container" data-target="modal">
+        <div class="modal__content">
+          <button class="button-reset modal__close-btn modal-close" type="button"><span></span><span></span>
+          </button>
+          <div class="modal__legend">Поздравляем вы открыли модалку!</div>
+        </div>
+      </div>
+    </div>
+
+  </body>
+  <script src="assets/js/main.js?v=0.0.0.0"></script>
+  <script src="assets/js/backend.js?v=0.0.0.0"></script>
+</html>

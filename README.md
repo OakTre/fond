@@ -1,9 +1,9 @@
 # Проект
 
-1. [Главная](https://github.com/OakTre/fond)
-2. [Проекты](https://github.com/OakTre/fond/projects.html)
-3. [Детальная](https://github.com/OakTre/fond/detail-page.html)
-4. [404](https://github.com/OakTre/fond/error.html)
+1. [Главная](https://oaktre.github.io/fond)
+2. [Проекты](https://oaktre.github.io/fond/projects.html)
+3. [Детальная](https://oaktre.github.io/fond/detail-page.html)
+4. [404](https://oaktre.github.io/fond/error.html)
 
 
 

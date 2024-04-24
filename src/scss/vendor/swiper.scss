@@ -1,0 +1,34 @@
+@import "swiper/swiper.scss";
+
+.swiper-pagination {
+  display: flex;
+  gap: 0.8rem;
+  align-items: center;
+
+  .swiper-pagination-bullet {
+    width: 2.4rem;
+    height: 0.4rem;
+    border-radius: 99.9rem;
+    background-color: var(--color-white-alpha50);
+    backdrop-filter: blur(40px);
+
+    &.swiper-pagination-bullet-active {
+      background-color: var(--color-white);
+      backdrop-filter: none;
+    }
+  }
+
+  &.swiper-pagination-clickable {
+    .swiper-pagination-bullet {
+      cursor: pointer;
+
+      &.swiper-pagination-bullet-active {
+        cursor: default;
+      }
+    }
+  }
+
+  &.swiper-pagination-lock {
+    display: none;
+  }
+}

@@ -1,0 +1,133 @@
+.ui-button {
+  --icon-wrap-w: 4.8rem;
+  --icon-wrap-h: 4.8rem;
+  --icon-w: 1.8rem;
+  --icon-h: 1.8rem;
+  --icon-bg: var(--color-white);
+  --icon-c: var(--color-black);
+  --bg: var(--color-white);
+  --c: var(--color-black);
+  --f: var(--font-btn-small);
+  --btn-transition: var(--transition);
+
+  display: inline-flex;
+  font: var(--f);
+
+  &__icon-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: var(--icon-wrap-w);
+    height: var(--icon-wrap-h);
+    border-radius: 50%;
+    background-color: var(--icon-bg);
+    color: var(--icon-c);
+    flex-shrink: 0;
+    transition: background-color var(--btn-transition);
+  }
+
+  &__icon {
+    width: var(--icon-w);
+    height: var(--icon-h);
+    fill: none;
+    stroke: currentColor;
+    transition: all var(--btn-transition);
+  }
+
+  &__content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-self: stretch;
+    flex-grow: 1;
+    padding: 1.3rem 1.8rem;
+    background-color: var(--bg);
+    color: var(--c);
+    border-radius: 99.9rem;
+    transition: background-color var(--btn-transition), color var(--btn-transition);
+
+    @include mq(md) {
+      padding: 1.2rem 1.6rem;
+      height: var(--icon-wrap-h);
+    }
+  }
+
+  &--variant {
+    &--default {
+      &:hover {
+        --bg: var(--color-green);
+        --c: var(--color-white);
+        --icon-bg: var(--color-green);
+        --icon-c: var(--color-white);
+      }
+    }
+
+    &--default-outline {
+      --bc: var(--color-white);
+
+      .ui-button__content {
+        border: 1px solid var(--bc);
+        padding: 1.2rem 1.6rem;
+
+        @include mq(md) {
+          padding: 1rem 1.4rem;
+        }
+      }
+
+      .ui-button__icon-wrapper {
+        border: 1px solid var(--color-white);
+      }
+
+      &:hover {
+        --bg: transparent;
+        --c: var(--color-white);
+        --bc: var(--color-white);
+        --icon-bg: transparent;
+        --icon-c: var(--color-white);
+      }
+    }
+
+    &--big {
+      --icon-wrap-w: 14rem;
+      --icon-wrap-h: 14rem;
+      --icon-w: 4.8rem;
+      --icon-h: 4.8rem;
+      --icon-bg: var(--color-green);
+      --icon-c: var(--color-white);
+      --bg: var(--color-light-green);
+      --c: var(--color-green);
+      --f: var(--font-btn-big);
+
+      &:hover {
+        --bg: var(--color-light-green2);
+      }
+
+      @include mq(md) {
+        .ui-button__icon-wrapper {
+          display: none;
+        }
+
+        .ui-button__content {
+          padding: 2.5rem;
+        }
+      }
+    }
+  }
+
+  &--size {
+    &--full {
+      width: 100%;
+    }
+
+    &--auto {
+      width: auto;
+    }
+  }
+
+  @include mq(md) {
+    --icon-wrap-w: 4rem;
+    --icon-wrap-h: 4rem;
+    --icon-w: 1.6rem;
+    --icon-h: 1.6rem;
+  }
+}

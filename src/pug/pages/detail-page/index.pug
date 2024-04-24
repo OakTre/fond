@@ -1,0 +1,24 @@
+main.page-main.main
+  section.section.detail-page
+    .site-container
+      .detail-page__container.detail-page-intro
+        .detail-page__block
+          a.detail-page__text-icon.detail-page__text-icon--is-link(href='./')
+            +icon-mono('arrow-line')(width="16" height="16")
+            | Все проекты
+        .detail-page__block
+          .detail-page__text-icon.detail-page__text-icon-offset
+            +icon-mono('calendar')(width="16" height="16")
+            | 13 ноября 2023
+          .detail-page__text-icon
+            +icon-mono('time')(width="16" height="16")
+            | 3 мин
+
+          .detail-page__heading
+            h1 #[span «Татнефть»] пригласила в регион студентов медиков со всей России
+
+      +pictureLazy('detailed-img.jpg')(class="detail-page__intro-img")
+
+    include about
+    include content
+  include read-more

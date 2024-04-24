@@ -1,0 +1,153 @@
+.detail-page {
+  margin-top: 6rem;
+
+  &__container {
+    display: grid;
+    grid-template-columns: 3fr 9fr;
+    gap: var(--grid-offset);
+
+    &--variant {
+      &--second {
+        grid-template-columns: 3fr 6fr 3fr;
+      }
+    }
+
+    @include mq(lg) {
+      display: block;
+    }
+  }
+
+  &__text-icon {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.8rem;
+    opacity: 0.4;
+    font: var(--font-text-14);
+
+    .icon {
+      width: 1.6rem;
+      height: 1.6rem;
+      fill: none;
+      stroke: currentColor;
+    }
+
+    &--is-link {
+      transition: all var(--transition);
+
+      .icon {
+        transform: scale(-1, 1);
+      }
+
+      &:hover {
+        opacity: 1;
+      }
+
+      @include mq(lg) {
+        display: none;
+      }
+    }
+  }
+
+  &__text-icon-offset {
+    margin-right: 2rem;
+  }
+
+  &__heading {
+    margin-top: 3rem;
+    font: var(--font-h3);
+
+    span, b, strong {
+      color: var(--color-green);
+    }
+
+    @include mq(sm) {
+      font: var(--font-h2);
+    }
+  }
+
+  &__images {
+    @include mq(lg) {
+      display: none;
+    }
+
+    &--is-mobile {
+      display: none;
+
+      @include mq(lg) {
+        display: flex;
+        overflow: auto;
+        padding-right: var(--container-padding);
+        margin-right: calc(-1 * var(--container-padding));
+        margin-bottom: 6rem;
+        gap: var(--grid-offset);
+
+        @include noScrollbar();
+      }
+    }
+  }
+
+  picture {
+    display: block;
+  }
+
+  &__intro-img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    border-radius: 4.8rem;
+    margin-top: 5rem;
+
+    @include mq(md) {
+      border-radius: 3.2rem;
+      margin-top: 3.2rem;
+    }
+  }
+
+  &__slider {
+    margin: 6rem 0;
+    overflow: visible;
+
+    .swiper-slide {
+      width: auto;
+
+      @include mq(md) {
+        width: 100%;
+      }
+    }
+
+    picture {
+      display: block;
+    }
+
+    &:hover {
+      cursor: none;
+    }
+  }
+
+  &__slider-img {
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    border-radius: 4.8rem;
+
+    @include mq(md) {
+      border-radius: 3.2rem;
+      width: 100%;
+      aspect-ratio: 2/1;
+      object-fit: cover;
+      object-position: top;
+    }
+  }
+
+  &__slider-cursor {
+    position: absolute;
+    z-index: 12;
+    transform: translate(-50%, -50%);
+    color: var(--color-white);
+    pointer-events: none;
+
+    @include mq(lg) {
+      display: none;
+    }
+  }
+}

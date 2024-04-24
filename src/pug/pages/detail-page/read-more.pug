@@ -1,0 +1,20 @@
+section.section
+  .site-container.read-more
+    .read-more__heading-wrapper
+      h2.read-more__heading
+        | Читайте также
+      +ui-slider-nav().read-more__nav
+    .swiper.read-more__slider
+      .swiper-wrapper
+        for i in Array.from(Array(5).keys())
+          .swiper-slide
+            +card-image({
+              img: 'card-image-girl.jpg',
+              content: 'Тэг с иконкой',
+              title: 'Инклюзивная танцевальная школа Рубаха',
+              text: 'В первый день зимы, 1 декабря 2022 года, в стенах' +
+                'нашего Дворца культуры прошел Всероссийский фестиваль интегрального' +
+                'творчества для людей с ограниченными возможностями здоровья — «ЛУЧ — 2022.',
+              btnLabel: 'Подробнее о проекте',
+              tagLabel: 'Культура'
+            })

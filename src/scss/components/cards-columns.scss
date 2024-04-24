@@ -1,0 +1,34 @@
+.cards-columns {
+  position: relative;
+  z-index: 12;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: var(--grid-offset);
+
+  &__column {
+    grid-column: 4 span;
+    display: flex;
+    flex-direction: column;
+    gap: var(--grid-offset);
+    align-self: flex-start;
+  }
+
+  @include mq(md) {
+    display: none;
+  }
+}
+
+.cards-columns-mobile {
+  display: none;
+
+  @include mq(md) {
+    display: grid;
+    grid-template-columns: 3fr 3fr;
+    gap: var(--grid-offset);
+  }
+
+  @include mq(sm) {
+    display: flex;
+    flex-direction: column;
+  }
+}

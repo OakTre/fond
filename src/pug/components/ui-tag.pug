@@ -1,0 +1,28 @@
+mixin ui-tag(options)
+  - defaultOptions = {}
+  - defaultOptions.content = '' // - текст
+  - defaultOptions.icon = 'verificated' // - иконка
+  - defaultOptions.href = '' // - ссылка
+
+  - options = Object.assign({}, defaultOptions, options || {})
+
+  if (options.href === '')
+    .ui-tag&attributes(attributes)
+      if (options.icon)
+        .ui-tag__icon-wrapper
+          +icon-mono(options.icon)(
+            width="18"
+            height="18"
+            class="ui-tag__icon"
+          )
+      .ui-tag__content= options.content
+  else
+    a.ui-tag(href=options.href)&attributes(attributes)
+      if (options.icon)
+        .ui-tag__icon-wrapper
+          +icon-mono(options.icon)(
+            width="18"
+            height="18"
+            class="ui-tag__icon"
+          )
+      .ui-tag__content= options.content

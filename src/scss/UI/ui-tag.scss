@@ -1,0 +1,53 @@
+.ui-tag {
+  --icon-size: 4.8rem;
+  --c: var(--color-white);
+  --bg: var(--color-white-alpha1);
+  --bc: var(--color-white-alpha10);
+  --f: var(--font-tags);
+
+  display: inline-flex;
+  align-items: center;
+
+  &__icon-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border: 1px solid var(--bc);
+    width: var(--icon-size);
+    height: var(--icon-size);
+    background-color: var(--bg);
+    backdrop-filter: blur(55px);
+  }
+
+  &__icon {
+    width: 1.8rem;
+    height: 1.8rem;
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 1.2px;
+
+    @include mq(md) {
+      width: 1.6rem;
+      height: 1.6rem;
+    }
+  }
+
+  &__content {
+    padding: 1.3rem 1.8rem;
+    border: 1px solid var(--bc);
+    background-color: var(--bg);
+    border-radius: 99.9rem;
+    color: var(--c);
+    backdrop-filter: blur(55px);
+
+    @include mq(md) {
+      padding: 0.4rem 1.6rem;
+    }
+  }
+
+  @include mq(md) {
+    --icon-size: 4rem;
+    --f: 400 1.2rem/135% var(--main-ff);
+  }
+}

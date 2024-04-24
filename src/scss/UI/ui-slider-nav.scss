@@ -1,0 +1,47 @@
+.ui-slider-nav {
+  --bg: var(--color-white-alpha1);
+  --c: var(--color-white);
+
+  display: flex;
+  justify-content: space-between;
+  width: 10.6rem;
+
+  &__btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 4.8rem;
+    height: 4.8rem;
+    border-radius: 50%;
+    background-color: var(--bg);
+    color: var(--c);
+    transition: background-color var(--transition), color var(--transition);
+    backdrop-filter: blur(40px);
+
+    &:nth-child(1) {
+      transform: scale(-1, 1);
+    }
+
+    &:hover {
+      --bg: var(--color-white);
+      --c: var(--color-green);
+    }
+
+    &.swiper-button-disabled {
+      opacity: 0.4;
+      pointer-events: none;
+    }
+
+    &.swiper-button-lock {
+      display: none;
+    }
+  }
+
+  &__btn-icon {
+    width: 2.4rem;
+    height: 2.4rem;
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 1.5px;
+  }
+}

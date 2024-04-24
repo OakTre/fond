@@ -1,0 +1,141 @@
+main.page-main.main
+  .site-container
+    .ui-fieldset__list
+      .ui-fieldset(data-label="Компонент кнопки: ui-button")
+        +ui-button({
+          label: 'Обычная кнопка',
+          size: 'full',
+          type: 'big'
+        })
+        +ui-button({
+          label: 'Обычная ссылка',
+          size: 'full',
+          type: 'big',
+          href: './ui-kit.html'
+        })
+        +ui-button({
+          label: 'Обычная кнопка(small)',
+          size: 'auto',
+          type: 'default'
+        })
+        +ui-button({
+          label: 'Обычная ссылка(small)',
+          size: 'auto',
+          type: 'default',
+          href: './ui-kit.html'
+        })
+        +ui-button({
+          label: 'Обычная кнопка(outline)',
+          size: 'auto',
+          type: 'default-outline'
+        })
+        +ui-button({
+          label: 'Обычная ссылка(outline)',
+          size: 'auto',
+          type: 'default-outline',
+          href: './ui-kit.html'
+        })
+
+      .ui-fieldset(data-label="Компонент кнопки: ui-slider-nav")
+        +ui-slider-nav()
+
+      .ui-fieldset(data-label="Компонент кнопки: ui-button-drag")
+        +ui-button-drag()
+        +ui-button-drag({size: 'small'})
+
+      .ui-fieldset(data-label="Компонент кнопки: ui-button-play")
+        +ui-button-play()
+
+      .ui-fieldset(data-label="Компонент тэг: ui-tag")
+        +ui-tag({
+          content: 'Тэг с иконкой'
+        })
+
+        +ui-tag({
+          icon: '',
+          content: 'Тэг без иконки'
+        })
+
+      .ui-fieldset(data-label="Компонент карточка: card")
+        .ui-fieldset__row
+          +card-green({
+            content: 'Тэг с иконкой',
+            title: 'Инклюзивная танцевальная школа Рубаха',
+            text: 'В первый день зимы, 1 декабря 2022 года, в стенах' +
+              'нашего Дворца культуры прошел Всероссийский фестиваль интегрального' +
+              'творчества для людей с ограниченными возможностями здоровья — «ЛУЧ — 2022.',
+            btnLabel: 'Подробнее о проекте',
+            tagLabel: 'Культура',
+            btnType: 'default-outline'
+          })
+          +card-dark({
+            content: 'Тэг с иконкой',
+            title: 'Инклюзивная танцевальная школа Рубаха',
+            text: 'В первый день зимы, 1 декабря 2022 года, в стенах' +
+              'нашего Дворца культуры прошел Всероссийский фестиваль интегрального' +
+              'творчества для людей с ограниченными возможностями здоровья — «ЛУЧ — 2022.',
+            btnLabel: 'Подробнее о проекте',
+            tagLabel: 'Культура'
+          })
+
+        .ui-fieldset__row
+          +card-image({
+            img: 'card-image-girl.jpg',
+            content: 'Тэг с иконкой',
+            title: 'Инклюзивная танцевальная школа Рубаха',
+            text: 'В первый день зимы, 1 декабря 2022 года, в стенах' +
+              'нашего Дворца культуры прошел Всероссийский фестиваль интегрального' +
+              'творчества для людей с ограниченными возможностями здоровья — «ЛУЧ — 2022.',
+            btnLabel: 'Подробнее о проекте',
+            tagLabel: 'Культура'
+          })
+
+        .ui-fieldset__row
+          +card-image({
+            img: 'card-image-girl2.jpg',
+            content: 'Тэг с иконкой',
+            title: 'Инклюзивная танцевальная школа Рубаха',
+            text: 'В первый день зимы, 1 декабря 2022 года, в стенах' +
+              'нашего Дворца культуры прошел Всероссийский фестиваль интегрального' +
+              'творчества для людей с ограниченными возможностями здоровья — «ЛУЧ — 2022.',
+            btnLabel: 'Подробнее о проекте',
+            tagLabel: 'Культура',
+            size: 'max'
+          })
+
+        .ui-fieldset__row
+          +card-full-image({
+            img: 'card-image-girl2.jpg',
+            content: 'Тэг с иконкой',
+            title: 'Инклюзивная танцевальная школа Рубаха',
+            text: 'В первый день зимы, 1 декабря 2022 года, в стенах' +
+              'нашего Дворца культуры прошел Всероссийский фестиваль интегрального' +
+              'творчества для людей с ограниченными возможностями здоровья — «ЛУЧ — 2022.',
+            btnLabel: 'Подробнее о проекте',
+            tagLabel: 'Культура',
+            size: 'medium'
+          })
+
+        .ui-fieldset__row
+          +card-image-icon({
+            title: 'Инклюзивная танцевальная школа Рубаха',
+            text: 'В первый день зимы, 1 декабря 2022 года, в стенах' +
+              'нашего Дворца культуры прошел Всероссийский фестиваль интегрального' +
+              'творчества для людей с ограниченными возможностями здоровья — «ЛУЧ — 2022.',
+            btnLabel: 'Подробнее о проекте',
+            tagLabel: 'Культура'
+          })
+
+        .ui-fieldset__row
+          +card-simple({
+            label: '<span>15</span>&nbsp;регионов',
+            text: 'география конкурса'
+          })
+
+      .ui-fieldset.ui-fieldset--is-white(data-label="Компонент таб: ui-tab")
+        +ui-tab({
+          content: 'Какой-то текст'
+        })
+        +ui-tab({
+          content: 'Какой-то текст2'
+        })

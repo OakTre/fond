@@ -1,0 +1,158 @@
+.site-container.detail-page-content
+  .detail-page__container
+    .detail-page__block
+    .detail-page__block
+      h3
+        | Будущие врачи и опытные специалисты&nbsp;на&nbsp;службе города
+      p
+        | Проект реализуется в Альметьевске и Лениногорске уже во второй год.
+        | В его рамках студенты из 11 регионов России и Республики Беларусь,
+        | обучающиеся по направлению «здравоохранение и медицинские науки»,
+        | присоединились к медотрядам. В течение 45 дней они будут работать
+        | в различных отделениях больниц, включая реанимацию, стоматологию,
+        | терапию, кардиологию, детские стационары и поликлиники. Студенты также будут
+        | участвовать в выездных бригадах, предоставляя медицинскую помощь в сельских поселениях.
+
+  .detail-page__container.detail-page__images
+    .detail-page__block
+      .detail-page-content__img
+        img(src='assets/images/doctor.jpg')
+        span
+          | Фото: © Сергей Ратанов
+    .detail-page__block
+      .detail-page-content__img
+        img(src='assets/images/concert.jpg')
+        span
+
+  .detail-page__images.detail-page__images--is-mobile
+    .detail-page-content__img
+      img(src='assets/images/doctor.jpg')
+      span
+        | Фото: © Сергей Ратанов
+    .detail-page-content__img
+      img(src='assets/images/concert.jpg')
+      span
+
+  .detail-page__container
+    .detail-page__block
+    .detail-page__block
+      ul
+        li
+          | Эти молодые люди, выполняя роль младшего и среднего медицинского
+          | персонала, получат поддержку и руководство от опытных сотрудников
+          | больниц. 25 студентов в Альметьевске и 24 студента в Лениногорске
+          | будут активно помогать в центральных районных больницах и детских
+          | городских больницах с перинатальными центрами. Проект поддерживается Компанией
+          | «Татнефть» и Министерством здравоохранения Российской Федерации.
+        li
+          | Организаторы, приложившие все усилия для успешной реализации проекта,
+          | уверены, что ребята смогут обрести новые навыки, а медицинские
+          | учреждения городов получат на лето добросовестных помощников.
+        li
+          | Говоря о целях и задачах предстоящей работы, Никита Алтухов,
+          | закончивший 1 курс Воронежского государственного медицинского университета,
+          | уверяет, что точно знает, как сможет помочь альметьевцам:
+
+  .detail-page__container
+    .detail-page__block
+    .detail-page__block
+      .detail-page-content__quote
+        .detail-page-content__quote-text
+          |            Мы устраиваемся санитарами для того, чтобы ухаживать
+          | за пациентами. Внимание, забота и хороший уход будут
+          | их радовать, улучшать настроение и душевное состояние.
+          | А это все очень сильно помогает в выздоровлении пациента.
+        .detail-page-content__quote-author
+          span Никита Алтухов
+          | студент 1 курса Воронежского государственного медицинского университета
+
+
+  .detail-page__container.detail-page__container--variant--second.detail-page__images
+    .detail-page__block
+    .detail-page__block
+      .detail-page-content__img
+        img(src='assets/images/doctor-with-patient.jpg')
+    .detail-page__block
+      .detail-page-content__img
+        img(src='assets/images/doctor2.jpg')
+        span
+
+  .detail-page__images.detail-page__images--is-mobile
+    .detail-page-content__img
+      img(src='assets/images/doctor2.jpg')
+      span
+    .detail-page-content__img
+      img(src='assets/images/doctor-with-patient.jpg')
+
+  .detail-page__container
+    .detail-page__block
+    .detail-page__block
+      .detail-page-content__quote
+        .detail-page-content__quote-text
+          |            Благодаря этому проекту наши границы
+          | расширяются. Это дружба и взаимодействие в медицинском сообществе.
+          | Мы готовим будущих врачей, которые действительно будут знать, как правильно лечить
+          | и оказывать медицинскую помощь населению не только нашей республики, но и всей России.
+        .detail-page-content__quote-author
+          | — подчеркнул главврач ЛЦРБ Рим Амеров
+
+  .detail-page-content__video
+    +ui-button-play().detail-page-content__video-play
+    img(src="assets/images/doctor3.jpg" class="detail-page-content__video-bg")
+
+
+  .detail-page__container
+    .detail-page__block
+    .detail-page__block
+      p
+        | Стоит напомнить, что медицинским проектам, как и проекту с медотрядами,
+        | «Татнефть» уделяет большое внимание. При поддержке Компании проводятся ремонтные
+        | работы в медучреждениях, закупается современное оборудование, грантовая система позволяет
+        | привлекать квалифицированных врачей, чтобы жители юго-востока могли своевременно получать
+        | необходимую помощь.
+
+  .detail-page__container.detail-page__container--variant--second
+    .detail-page__block
+    .detail-page__block
+      .comparison-image
+        .comparison-image__side
+          .comparison-image__text.comparison-image__text--is-right
+            | После
+          img(src="assets/images/after.jpg" class="comparison-image__img")
+        .comparison-image__side.comparison-image__side--is-right.comparison-image__side--is-clipped
+          .comparison-image__text.comparison-image__side--is-left
+            | До
+          img(src="assets/images/before.jpg" class="comparison-image__img")
+        +ui-button-drag({
+          size: 'small'
+        }).comparison-image__drag-btn
+    .detail-page__block
+
+
+  .detail-page__container.detail-page__container--variant--second
+    .detail-page__block
+    .detail-page__block
+      .detail-page-content__quote.detail-page-content__quote--variant--green
+        .detail-page-content__quote-text
+          |          Мы надеемся, что вложенные Компанией
+          | инвестиции вернутся здоровым обществом на благо нашей республики.
+        .detail-page-content__quote-author
+          span Эльмира Газизова
+          | руководитель программы «Гранты ПАО «Татнефть»
+    .detail-page__block
+      img(src="assets/images/quote-author.jpg" class="detail-page-content__quote-img")
+
+
+  .swiper.detail-page__slider
+    .detail-page__slider-cursor
+      +ui-button-drag()
+    .scroll-bar
+    .swiper-wrapper
+      .swiper-slide
+        +pictureLazy('detail/slide1.jpg')(class="detail-page__slider-img")
+      .swiper-slide
+        +pictureLazy('detail/slide2.jpg')(class="detail-page__slider-img")
+      .swiper-slide
+        +pictureLazy('detail/slide3.jpg')(class="detail-page__slider-img")
+      .swiper-slide
+        +pictureLazy('detail/slide4.jpg')(class="detail-page__slider-img")

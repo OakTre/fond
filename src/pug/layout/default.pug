@@ -1,0 +1,28 @@
+include ../data/config.pug
+include ../mixins/**/*.pug
+include ../components/**/*.pug
+
+block variables
+
+doctype html
+html(lang=siteLang)
+  head
+    +head()
+  body(class=bodyClass)
+    +preloader()
+
+    .page-wrapper
+      block header
+        +header()
+
+      block content
+
+      block footer
+        +footer()
+
+    .modal
+      +modal()
+
+  block scripts
+    script(src="assets/js/main.js?v=" + siteVersion)
+    script(src="assets/js/backend.js?v=" + siteVersion)

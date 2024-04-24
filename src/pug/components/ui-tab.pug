@@ -1,0 +1,10 @@
+mixin ui-tab(options)
+  - defaultOptions = {}
+  - defaultOptions.content = '' // - текст
+  - defaultOptions.isChecked = false
+
+  - options = Object.assign({}, defaultOptions, options || {})
+
+  label.ui-tab&attributes(attributes)
+    input(type='radio' checked=options.isChecked name='custom' value='custom' class='visually-hidden ui-tab__control')
+    span.ui-tab__content= options.content

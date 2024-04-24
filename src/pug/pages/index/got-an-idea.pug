@@ -1,0 +1,31 @@
+section.got-an-idea
+  .site-container
+    .got-an-idea__container
+      .got-an-idea__block
+        h2.got-an-idea__heading
+          | Есть&nbsp;идея #[br]
+          span
+            | проекта?
+        .got-an-idea__imgs
+          +pictureLazy('index/class.jpg').got-an-idea__img
+          +pictureLazy('index/child.jpg').got-an-idea__img
+      .got-an-idea__block
+        h3.got-an-idea__small-heading
+          | Участвуйте в конкурсе грантов
+        .got-an-idea__text
+          p
+            | Для консультации по проекту свяжитесь с нами по почте
+            | #[a(href='mailto:grants@bf-tatneft.ru') grants@bf-tatneft.ru]
+            | или позвоните по телефону #[a(href='mailto:+7 (8553) 38-71-37') +7 (8553) 38-71-37].
+          p
+            | Специалисты фонда подскажут, с чего начать и как правильно оформить грант.
+        .got-an-idea__text
+          p
+            | Подать заявку, ознакомиться с положениями и результатами конкурса можно
+            | на основном сайте Фонда
+
+        +ui-button({
+          label: 'Читать подробнее',
+          type: 'default-outline',
+          href: './'
+        }).got-an-idea__btn

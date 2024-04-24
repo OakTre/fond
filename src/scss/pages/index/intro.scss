@@ -1,0 +1,147 @@
+.index-intro {
+  margin-bottom: var(--grid-offset);
+
+  &__container {
+    display: grid;
+    grid-template-columns: 6fr 6fr;
+    gap: var(--grid-offset);
+
+    @include mq(lg) {
+      display: block;
+      overflow: hidden;
+    }
+  }
+
+  &__block {
+    position: relative;
+    border-radius: 4.8rem;
+    padding: 6.4rem 7.2rem;
+    color: var(--color-white);
+    display: flex;
+    flex-direction: column;
+    min-height: 64rem;
+
+    @include mq(md) {
+      padding: 2rem;
+      border-radius: 3.2rem;
+    }
+
+    @include mq(sm) {
+      min-height: 62rem;
+    }
+
+    &--variant {
+      &--info {
+        background-color: var(--color-green);
+        background-image: url("../images/index/block-bg.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+
+        @include mq(md) {
+          background-image: url("../images/index/block-bg-mobile.png");
+        }
+      }
+
+      &--sliders {
+        background-color: var(--color-light-grey);
+
+        @include mq(lg) {
+          display: none;
+        }
+      }
+    }
+  }
+
+  &__heading {
+    font: var(--font-h2);
+    margin-bottom: 3.2rem;
+
+    span, b, strong {
+      color: var(--color-white-alpha50);
+    }
+
+    @include mq(sm) {
+      font: var(--font-h1);
+    }
+  }
+
+  &__text {
+    max-width: 50rem;
+    margin-bottom: 2rem;
+  }
+
+  &__btn {
+    margin-top: auto;
+    align-self: flex-start;
+  }
+
+  &__slider {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 4.8rem;
+
+    picture {
+      display: block;
+      height: 100%;
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 4.8rem;
+    }
+
+    .swiper-pagination {
+      position: absolute;
+      left: 7.2rem;
+      bottom: 8.6rem;
+      z-index: 2;
+    }
+
+    &--mobile {
+      display: none;
+      position: static;
+      margin-top: 5rem;
+      height: 40rem;
+      overflow: visible;
+
+      img {
+        border-radius: 50rem;
+        height: 100%;
+      }
+
+      @include mq(lg) {
+        display: block;
+
+        .swiper-pagination {
+          display: none;
+        }
+      }
+
+      @include mq(sm) {
+        height: 21rem;
+      }
+    }
+  }
+
+  &__tag {
+    position: relative;
+    z-index: 2;
+  }
+
+  &__slider-nav {
+    position: absolute;
+    bottom: 6.4rem;
+    right: 7.2rem;
+    z-index: 2;
+
+    @include mq(lg) {
+      display: none;
+    }
+  }
+}

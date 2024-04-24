@@ -1,0 +1,47 @@
+// - ui-button: компонент кнопки/ссылки
+mixin ui-button(options)
+  - defaultOptions = {}
+  - defaultOptions.label = 'custom button' // - текст элемента
+  - defaultOptions.icon = 'arrow-line' // - иконка
+  - defaultOptions.size = 'auto' // - размер кнопки (full, auto)
+  - defaultOptions.type = 'default' // - тип кнопки (big, default, default-outline)
+  - defaultOptions.href = '' // - ссылка
+  - defaultOptions.isNotControl = false // - если не ссылка и не кнопка
+
+  - options = Object.assign({}, defaultOptions, options || {})
+
+  if (options.isNotControl && options.href === '')
+    .ui-button(
+      class=[`ui-button--size--${options.size}`, `ui-button--variant--${options.type}`]
+      href=options.href
+    )&attributes(attributes)
+      span.ui-button__icon-wrapper
+        +icon-mono(options.icon)(
+          width="24"
+          height="24"
+          class="ui-button__icon"
+        )
+      span.ui-button__content= options.label
+  else if (options.href === '' && !options.isNotControl)
+    button.ui-button(
+      class=[`ui-button--size--${options.size}`, `ui-button--variant--${options.type}`]
+    )&attributes(attributes)
+      span.ui-button__icon-wrapper
+        +icon-mono(options.icon)(
+          width="24"
+          height="24"
+          class="ui-button__icon"
+        )
+      span.ui-button__content= options.label
+  else if (options.href !== '' && !options.isNotControl)
+    a.ui-button(
+      class=[`ui-button--size--${options.size}`, `ui-button--variant--${options.type}`]
+      href=options.href
+    )&attributes(attributes)
+      span.ui-button__icon-wrapper
+        +icon-mono(options.icon)(
+          width="24"
+          height="24"
+          class="ui-button__icon"
+        )
+      span.ui-button__content= options.label

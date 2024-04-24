@@ -1,0 +1,40 @@
+section.index-intro
+  .site-container
+    .index-intro__container
+      .index-intro__block.index-intro__block--variant--info
+        h1.index-intro__heading
+          | Истории добра,
+          span
+            |&nbsp;которые меняют мир
+        p.index-intro__text
+          | С 2016 года наш Грант стал важным источником положительных перемен
+          | в Республике Татарстан. Этот уникальный проект — не просто конкурс,
+          | это движение, вовлекающее наших граждан в активное решение социальных вызовов.
+
+        +ui-button({
+          label: 'Гранты ПАО «Татнефть»',
+          href: './',
+          type: 'default-outline'
+        }).index-intro__btn
+
+        .swiper.index-intro__slider.index-intro__slider--mobile
+          +ui-slider-nav().index-intro__slider-nav
+          .swiper-pagination
+          .swiper-wrapper
+            .swiper-slide
+              +pictureLazy('index/slider-img1.jpg')
+            .swiper-slide
+              +pictureLazy('index/slider-img2.jpg')
+
+      .index-intro__block.index-intro__block--variant--sliders
+        +ui-tag({
+          content: 'Поддерживаем научные проекты'
+        }).index-intro__tag
+        .swiper.index-intro__slider.index-intro-slider
+          +ui-slider-nav().index-intro__slider-nav
+          .swiper-pagination
+          .swiper-wrapper
+            .swiper-slide
+              +pictureLazy('index/slider-img1.jpg')
+            .swiper-slide
+              +pictureLazy('index/slider-img2.jpg')

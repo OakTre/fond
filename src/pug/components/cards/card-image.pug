@@ -1,0 +1,4 @@
+mixin card-image(options)
+  +card(options).card--variant--with-image
+    .card__bg.card__bg--is-image
+      +pictureLazy(options.img).card__bg-image

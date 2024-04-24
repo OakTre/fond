@@ -1,0 +1,173 @@
+.preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 999;
+  background-color: var(--color-white);
+  transition: opacity 0.4s ease, visibility 0.4s ease;
+
+  &--is-loaded {
+    opacity: 0;
+    visibility: visible;
+  }
+
+  &--is-hidden {
+    display: none;
+  }
+
+  &__content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    animation: translateContent 4s infinite;
+  }
+
+  &__logo {
+    position: relative;
+    display: inline-block;
+
+    &--variant {
+      &--small-logo {
+        height: 3.1rem;
+        width: 1.5rem;
+        z-index: 2;
+        transform: translate(6.1rem);
+      }
+
+      &--text-logo {
+        width: 12.2rem;
+        height: 2.8rem;
+        position: relative;
+        transform: translate(-12.2rem);
+        left: 6.1rem;
+
+        animation: translateAnimation 4s infinite;
+      }
+    }
+  }
+
+  &__img {
+    width: 100%;
+    height: 100%;
+
+    &--small {
+      animation: hideAnimation 4s infinite;
+    }
+
+    &--text {
+      animation: hideAnimation 4s infinite;
+    }
+  }
+
+  &__logo-foreground {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--color-white);
+
+    &--variant {
+      &--small-logo {
+        animation: heights 4s infinite;
+      }
+
+      &--text-logo {
+        animation: widths 4s infinite;
+      }
+    }
+  }
+}
+
+@keyframes translateContent {
+  50% {
+    transform: translate(0)
+  }
+
+  85% {
+    transform: translate(-6.1rem)
+  }
+
+  97% {
+    transform: translate(-6.1rem)
+  }
+
+  to {
+    transform: translate(0)
+  }
+}
+
+@keyframes translateAnimation {
+  50% {
+    transform: translate(-12.2rem)
+  }
+
+  85% {
+    transform: translate(0)
+  }
+
+  97% {
+    transform: translate(0)
+  }
+
+  to {
+    transform: translate(-12.2rem)
+  }
+}
+
+@keyframes hideAnimation {
+  0% {
+    opacity: 1
+  }
+
+  92% {
+    opacity: 1
+  }
+
+  to {
+    opacity: 0
+  }
+}
+
+@keyframes heights {
+  10% {
+    height: 100%
+  }
+
+  50% {
+    height: 0
+  }
+
+  85% {
+    height: 0
+  }
+
+  97% {
+    height: 0
+  }
+
+  to {
+    height: 100%
+  }
+}
+
+@keyframes widths {
+  50% {
+    width: 100%
+  }
+
+  85% {
+    width: 0
+  }
+
+  97% {
+    width: 0
+  }
+
+  to {
+    width: 100%
+  }
+}

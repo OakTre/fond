@@ -1,0 +1,35 @@
+section.care
+  .site-container
+    .care__container
+      h2.care__heading
+        | С заботой о людях
+
+      .swiper.care__slider
+        .swiper-wrapper
+          .swiper-slide.care__slide-box
+            +pictureLazy('index/care-img1.jpg').care__slide
+          .swiper-slide.care__slide-box
+            +pictureLazy('index/care-img2.jpg').care__slide
+          .swiper-slide.care__slide-box
+            +pictureLazy('index/care-img3.jpg').care__slide
+          .swiper-slide.care__slide-box
+            +pictureLazy('index/care-img4.jpg').care__slide
+          .swiper-slide.care__slide-box
+            +pictureLazy('index/care-img5.jpg').care__slide
+
+      .care__info
+        p.care__text
+          | Наш подход строится на открытом диалоге с местным сообществом
+          | и заинтересованными сторонами. Мы работаем в партнерстве
+          | с муниципальными властями, реализуя проекты по улучшению
+          | инфраструктуры городов и поселков наших регионов.
+        p.care__text
+          | Кроме того, мы активно участвуем в строительстве социально
+          | значимых объектов, организации культурных мероприятий, помогаем
+          | представителям здравооохранения и просто неравнодушным гражданам.
+
+        +ui-button({
+          label: 'Подробнее о гранте',
+          href: './',
+          type: 'default-outline'
+        }).care__info-btn

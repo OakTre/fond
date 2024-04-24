@@ -1,0 +1,40 @@
+mixin card-simple(options)
+  - defaultOptions = {}
+  - defaultOptions.label = '' // - Заголовок
+  - defaultOptions.href = '' // - ссылка
+  - defaultOptions.icon = '' // - если есть иконка
+  - defaultOptions.size = 'normal' // - высота карточки(small, medium, max)
+  - defaultOptions.img = 'thumb.png' // - изображение
+
+  - options = Object.assign({}, defaultOptions, options || {})
+
+  if (options.href === '')
+    .card.card--variant--is-no-link(class=`card--size--${options.size}`)&attributes(attributes)
+      block
+      .card__image-icon-wrapper
+        +pictureLazy(options.img)(class='card__image-icon')
+      .card__descr-label!= options.label
+      if (options.icon)
+        span.card__descr
+          +icon-mono('pin')(width="16" height="16")
+          span.card__descr-text
+            | #{options.text}
+      else
+        span.card__descr
+          span.card__descr-text
+            | #{options.text}
+  else
+    a.card.card--variant--is-no-link(class=`card--size--${options.size}` href=options.href)&attributes(attributes)
+      block
+      .card__image-icon-wrapper
+        +pictureLazy(options.img)(class='card__image-icon')
+      .card__descr-label!= options.label
+      if (options.icon)
+        span.card__descr
+          +icon-mono('pin')(width="16" height="16")
+          span.card__descr-text
+            | #{options.text}
+      else
+        span.card__descr
+          span.card__descr-text
+            | #{options.text}

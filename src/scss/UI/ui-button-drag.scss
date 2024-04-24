@@ -1,0 +1,49 @@
+.ui-button-drag {
+  --size: 10rem;
+  --bg: var(--color-green);
+  --c: var(--color-white);
+  --bc: var(--color-green);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: var(--size);
+  height: var(--size);
+  border: 1px solid var(--bc);
+  background-color: var(--bg);
+  border-radius: 50%;
+  gap: 0.8rem;
+  transition: gap var(--transition);
+  backdrop-filter: blur(3px);
+
+  &__icon {
+    width: 0.8rem;
+    height: 1.6rem;
+
+    &:nth-child(1) {
+      transform: scale(-1, 1);
+    }
+  }
+
+  &:hover {
+    gap: 1.6rem;
+  }
+
+  &--variant {
+    &--small {
+      --size: 4.9rem;
+      --bg: var(--color-white-alpha50);
+      --bc: #FFFFFF4D;
+
+      gap: 0.4rem;
+
+      .ui-button-drag__icon {
+        height: 1.2rem;
+      }
+
+      &:hover {
+        gap: 1rem;
+      }
+    }
+  }
+}

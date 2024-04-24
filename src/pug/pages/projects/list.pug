@@ -1,0 +1,14 @@
+section.section.projects-list
+  .site-container
+
+    +cards-project-list()
+    +cards-list-mobile()
+
+    +ui-button({
+      label: 'Загрузить еще',
+      size: 'full',
+      type: 'big'
+    }).projects-list__load-button
+
+    .projects-list__pagination
+      +ui-pagination()

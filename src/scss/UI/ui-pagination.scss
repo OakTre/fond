@@ -1,0 +1,47 @@
+.ui-pagination {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+
+  &__item {
+    --f: var(--font-text-14);
+    --c: var(--color-black);
+    --bc: var(--color-brown-alpha15);
+    --bg: var(--color-white);
+
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--bc);
+    font: var(--f);
+    color: var(--c);
+    border-radius: 50%;
+    background-color: var(--bg);
+    transition: all var(--transition);
+    cursor: pointer;
+
+    .icon {
+      width: 2.4rem;
+      height: 2.4rem;
+      fill: none;
+      stroke: currentColor;
+      stroke-width: 1.4px;
+    }
+
+    &--is-active {
+      --bc: var(--color-green);
+      --bg: var(--color-green);
+      --c: var(--color-white);
+    }
+
+    &--variant {
+      &--btn {
+        &:first-child {
+          transform: scale(-1, 1);
+        }
+      }
+    }
+  }
+}

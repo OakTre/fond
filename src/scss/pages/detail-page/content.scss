@@ -1,0 +1,275 @@
+.detail-page-content {
+  margin-top: 8rem;
+
+  @include mq(md) {
+    margin-top: 6rem;
+  }
+
+  h3 {
+    font: var(--font-h6);
+    margin-bottom: 2.4rem;
+    max-width: 79.6rem;
+
+    @include mq(sm) {
+      font: var(--font-h4);
+    }
+  }
+
+  p {
+    max-width: 79.6rem;
+    margin-bottom: 6rem;
+
+    @include mq(md) {
+      margin-bottom: 4rem;
+    }
+
+    @include mq(sm) {
+      font: var(--font-text-16reg);
+    }
+  }
+
+  &__img {
+    width: 100%;
+
+    @include mq(lg) {
+      width: 80%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      flex-shrink: 0;
+    }
+
+    img {
+      width: 100%;
+      height: auto;
+      border-radius: 3.2rem;
+      margin-bottom: 6rem;
+      object-fit: contain;
+
+      @include mq(lg) {
+        height: 62rem;
+        flex-shrink: 0;
+        object-fit: cover;
+        object-position: top;
+        margin-bottom: 0;
+      }
+
+      @include mq(md) {
+        height: 43rem;
+      }
+
+      @include mq(sm) {
+        height: 22rem;
+        border-radius: 2.4rem;
+      }
+    }
+
+    span {
+      display: block;
+      margin-top: 1rem;
+      font: var(--font-text-14);
+      opacity: 0.5;
+
+      @include mq(lg) {
+        flex-shrink: 0;
+      }
+    }
+  }
+
+  ul {
+    max-width: 79.6rem;
+    margin-bottom: 6rem;
+
+    @include mq(md) {
+      margin-bottom: 4rem;
+    }
+
+    li {
+      position: relative;
+      margin-bottom: 1.6rem;
+      padding-left: 9.4rem;
+
+      &::before {
+        position: absolute;
+        top: 0.4rem;
+        left: 0;
+        width: 1.2rem;
+        height: 1.2rem;
+        border-radius: 50%;
+        border: 1px solid var(--color-green);
+        content: "";
+
+        @include mq(md) {
+          top: 0.6rem;
+          width: 0.8rem;
+          height: 0.8rem;
+        }
+      }
+
+      @include mq(md) {
+        padding-left: 3rem;
+      }
+    }
+  }
+
+  &__quote {
+    position: relative;
+    max-width: 93rem;
+    margin-bottom: 6rem;
+
+    &::after {
+      position: absolute;
+      top: 0;
+      left: -13.4rem;
+      height: 100%;
+      width: 0.1rem;
+      background-color: var(--color-green);
+      opacity: 0.3;
+      content: "";
+
+      @include mq(md) {
+        display: none;
+      }
+    }
+
+    &::before {
+      position: absolute;
+      top: 0;
+      left: -7.4rem;
+      width: 3.4rem;
+      height: 3.4rem;
+      background-image: url("../images/quote.svg");
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: center;
+      content: "";
+
+      @include mq(md) {
+        top: 1.4rem;
+        left: 50%;
+        width: 1.8rem;
+        height: 1.8rem;
+        transform: translateX(-50%);
+      }
+    }
+
+    @include mq(md) {
+      padding-top: 4.2rem;
+      padding-bottom: 2rem;
+      border-top: 1px solid var(--color-light-green);
+      border-bottom: 1px solid var(--color-light-green);
+      margin-bottom: 4rem;
+    }
+
+    &--variant {
+      &--green {
+        background-color: var(--color-green);
+        border-radius: 2.4rem;
+        width: 100%;
+        padding: 3.2rem;
+        color: var(--color-white);
+        background-image: url("../images/qoute-bg.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        .detail-page-content__quote-author {
+          color: var(--color-white-alpha50);
+
+          span {
+            color: var(--color-white);
+          }
+        }
+
+        &::before {
+          z-index: 2;
+          top: 3rem;
+          left: 3rem;
+          background-image: url("../images/quote2.svg");
+        }
+
+
+        &::after {
+          content: none;
+        }
+      }
+    }
+  }
+
+  &__quote-img {
+    border-radius: 2.4rem;
+    width: auto;
+    height: 22.4rem;
+    object-fit: contain;
+
+    @include mq(lg) {
+      display: none;
+    }
+  }
+
+  &__quote-text {
+    font: var(--font-quote);
+    margin-bottom: 1.6rem;
+  }
+
+  &__quote-author {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+    padding-left: 7.8%;
+    font: var(--font-quote-caption);
+    max-width: 41rem;
+    color: var(--color-dark-grey);
+
+
+
+    span {
+      display: block;
+      font: var(--font-text-16reg);
+      color: var(--color-black);
+
+      @include mq(sm) {
+        font: var(--font-text-14);
+      }
+    }
+  }
+
+  &__video {
+    position: relative;
+    width: 100%;
+    background-color: var(--color-light-grey);
+    border-radius: 4.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 6rem;
+
+    @include mq(md) {
+      border-radius: 3.2rem;
+    }
+
+    @include mq(sm) {
+      height: 22rem;
+    }
+  }
+
+  &__video-play {
+    position: absolute;
+  }
+
+  &__video-bg {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    border-radius: 4.8rem;
+
+    @include mq(md) {
+      border-radius: 3.2rem;
+    }
+
+    @include mq(sm) {
+      object-fit: cover;
+      height: 100%;
+    }
+  }
+}

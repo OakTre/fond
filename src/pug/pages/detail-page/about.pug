@@ -1,0 +1,57 @@
+.site-container
+  .detail-page-about
+    .detail-page-about__row
+      .detail-page-about__label
+        | О проекте
+      .detail-page-about__text
+        p
+          | Проект #[span «‎АльмМедик» и «‎Призвание»] — это инициатива,
+          | направленная на создание и развертывание медицинских отрядов в
+          | городах Альметьевске и Лениногорске.
+          | Проект призван #[span улучшить медицинское обслуживание] в этих городах,
+          | обеспечивая профессиональную помощь и заботу населению.
+    .detail-page-about__boxes
+      .detail-page-about__box-column.detail-page-about__box-column--direction--down
+        .detail-page-about__box.detail-page-about__box--variant--is-image
+          +pictureLazy('logo-box.png').detail-page-about__box-image
+      .detail-page-about__box-column
+        .detail-page-about__box.detail-page-about__box--variant--is-green
+          .detail-page-about__box-header
+            span.detail-page-about__box-label
+              | Конкурс
+            +icon-mono('star')(width="24" height="24" class="detail-page-about__box-icon")
+          span.detail-page-about__box-heading
+            | Энергия добра
+      .detail-page-about__box-column
+        .detail-page-about__box
+          .detail-page-about__box-header
+            span.detail-page-about__box-label
+              | Район / Город
+            +icon-mono('pin')(width="24" height="24" class="detail-page-about__box-icon")
+          span.detail-page-about__box-heading
+            | Альметьевск #[br]
+            | Лениногорск
+        .detail-page-about__box.detail-page-about__box--variant--is-black
+          .detail-page-about__box-header
+            span.detail-page-about__box-label
+              | Участники
+            +icon-mono('users')(width="24" height="24" class="detail-page-about__box-icon")
+          span.detail-page-about__box-heading
+            | 25 студентов
+      .detail-page-about__box-column.detail-page-about__box-column--direction--down
+        .detail-page-about__box.detail-page-about__box--variant--is-green
+          .detail-page-about__box-header
+            span.detail-page-about__box-label
+              | Год
+            +icon-mono('calendar')(width="24" height="24" class="detail-page-about__box-icon")
+          span.detail-page-about__box-heading
+            | 2023
+      .detail-page-about__box-column
+        .detail-page-about__box.detail-page-about__box--variant--is-black
+          .detail-page-about__box-header
+            span.detail-page-about__box-label
+              | Проект
+            +icon-mono('folder')(width="24" height="24" class="detail-page-about__box-icon")
+          span.detail-page-about__box-heading
+            | «АльмМедик» #[br]
+            | «‎Призвание»

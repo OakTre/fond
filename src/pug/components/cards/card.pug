@@ -1,0 +1,30 @@
+mixin card(options)
+  - defaultOptions = {}
+  - defaultOptions.title = '' // - Заголовок
+  - defaultOptions.text = 'verificated' // - Текст
+  - defaultOptions.btnLabel = '' // - текст кнопки
+  - defaultOptions.btnType = 'default' //- тип кнопки
+  - defaultOptions.href = '' // - ссылка
+  - defaultOptions.tagLabel = '' // - текст тега
+  - defaultOptions.tagIcon = '' // - иконка тега
+  - defaultOptions.size = 'normal' // - высота карточки(small - 640, medium - 700, max - 780)
+
+  - options = Object.assign({}, defaultOptions, options || {})
+
+  article.card(class=`card--size--${options.size}`)&attributes(attributes)
+    //- блок для фона
+    block
+    +ui-tag({
+      content: options.tagLabel,
+      icon: options.tagIcon
+    }).card__tag
+    header.card__info
+      h3.card__heading
+        a(href="./")= options.title
+      p.card__text= options.text
+
+      +ui-button({
+        label: options.btnLabel,
+        type: options.btnType,
+        isNotControl: true
+      }).card__btn

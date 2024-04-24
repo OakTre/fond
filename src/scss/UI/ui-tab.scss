@@ -1,0 +1,32 @@
+.ui-tab {
+  --bg: var(--color-brown-alpha5);
+  --c: var(--color-black);
+  --bc: var(--color-brown-alpha15);
+
+  position: relative;
+  display: inline-block;
+
+  &__content {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.2rem 2.8rem;
+    background-color: var(--bg);
+    color: var(--c);
+    border-radius: 6.5rem;
+    border: 1px solid var(--bc);
+    cursor: pointer;
+    transition: all var(--transition);
+    font: var(--font-tabs);
+  }
+
+  &__control {
+    &:checked {
+      ~ .ui-tab__content {
+        background-color: var(--color-brown);
+        color: var(--color-white);
+        border-color: var(--color-brown);
+      }
+    }
+  }
+}

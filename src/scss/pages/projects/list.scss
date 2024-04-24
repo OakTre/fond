@@ -1,0 +1,14 @@
+.projects-list {
+  margin-bottom: 6rem;
+
+  &__pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3.2rem;
+  }
+
+  &__load-button {
+    margin-top: var(--grid-offset);
+  }
+}

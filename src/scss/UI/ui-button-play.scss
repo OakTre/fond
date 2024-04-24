@@ -1,0 +1,36 @@
+.ui-button-play {
+  --size: 11.9rem;
+  --bc: #FFFFFF4D;
+  --bg: #FFFFFF0D;
+  --c: var(--color-white);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: var(--size);
+  height: var(--size);
+  border: 1px solid var(--bc);
+  background-color: var(--bg);
+  color: var(--c);
+  border-radius: 50%;
+  transition: all var(--transition);
+  backdrop-filter: blur(12px);
+
+  &:hover {
+    transform: scale(1.07);
+  }
+
+  &__icon {
+    width: 1.4rem;
+    height: 2.1rem;
+
+    @include mq(sm) {
+      width: 1.2rem;
+      height: 0.8rem;
+    }
+  }
+
+  @include mq(sm) {
+    --size: 6rem;
+  }
+}

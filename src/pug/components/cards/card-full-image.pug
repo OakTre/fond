@@ -1,0 +1,21 @@
+mixin card-full-image(options)
+  - defaultOptions = {}
+  - defaultOptions.title = '' // - Заголовок
+  - defaultOptions.btnLabel = '' // - текст кнопки
+  - defaultOptions.btnType = 'default' //- тип кнопки
+  - defaultOptions.href = '' // - ссылка
+  - defaultOptions.img = '' // - изображение
+  - defaultOptions.size = 'normal' // - высота карточки(small, medium, max)
+
+  - options = Object.assign({}, defaultOptions, options || {})
+
+  article.card.card--variant--is-full-img(class=`card--size--${options.size}`)
+    .card__bg.card__bg--is-image
+      +pictureLazy(options.img).card__bg-image
+    h3.card__heading
+      a(href="./")= options.title
+    +ui-button({
+      label: options.btnLabel,
+      type: options.btnType,
+      isNotControl: true
+    }).card__btn

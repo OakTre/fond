@@ -1,0 +1,9 @@
+mixin ui-button-drag(options)
+  - defaultOptions = {}
+  - defaultOptions.size = 'big' //- размеры кнопки (big, small)
+
+  - options = Object.assign({}, defaultOptions, options || {})
+
+  button.ui-button-drag(class=`ui-button-drag--variant--${options.size}`)&attributes(attributes)
+    +icon-mono('arrow-triangle')(width="16" height="8" class="ui-button-drag__icon")
+    +icon-mono('arrow-triangle')(width="16" height="8" class="ui-button-drag__icon")

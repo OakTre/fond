@@ -1,0 +1,14 @@
+main.page-main.main
+  section.error
+    .site-container
+      .error__container
+        h1.error__heading
+          | 404
+        p.error__text
+          | К сожалению, такой страницы не существует. Возможно она была удалена, или был введен
+          | неверный адрес в адресной строке.
+        +ui-button({
+          label: 'Вернуться на главную',
+          type: 'default-outline',
+          href: './ui-kit.html'
+        }).error__btn

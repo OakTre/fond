@@ -1,0 +1,18 @@
+.projects-filter {
+  margin-bottom: 3.2rem;
+
+  &__container {
+    display: flex;
+    gap: 0.4rem;
+    align-items: center;
+    overflow: auto;
+    margin-right: -100%;
+    padding-right: 100%;
+
+    @include noScrollbar()
+  }
+
+  &__item {
+    flex-shrink: 0;
+  }
+}

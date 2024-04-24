@@ -1,0 +1,116 @@
+:root {
+  /* typography  */
+  --main-ff: "SuisseIntl", sans-serif;
+  --font-size-main: 0.595vw;
+  --font-h1: 450 8rem/8.4rem var(--main-ff);
+  --font-h2: 450 6.4rem/6.7rem var(--main-ff);
+  --font-h3: 500 6rem/1 var(--main-ff);
+  --font-h4: 450 4.4rem/5rem var(--main-ff);
+  --font-h5: 450 4rem/4.2rem var(--main-ff);
+  --font-h6: 500 3.6rem/3.7rem var(--main-ff);
+  --font-h7: 500 2.6rem/2.8rem var(--main-ff);
+  --font-nums80: 300 8rem/115% var(--main-ff);
+  --font-nums48: 300 4.8rem/100% var(--main-ff);
+  --font-nums40: 400 4rem/115% var(--main-ff);
+  --font-text-40: 450 4rem/115% var(--main-ff);
+  --font-nums20: 400 2rem/115% var(--main-ff);
+  --font-text-40reg: 400 4rem/115% var(--main-ff);
+  --font-text-34: 450 3.4rem/120% var(--main-ff);
+  --font-text-26: 400 2.6rem/120% var(--main-ff);
+  --font-text-24: 400 2.4rem/140% var(--main-ff);
+  --font-text-19: 450 1.9rem/120% var(--main-ff);
+  --font-text-18book: 450 1.8rem/115% var(--main-ff);
+  --font-text-18reg: 450 1.8rem/115% var(--main-ff);
+  --font-text-body: 400 1.8rem/130% var(--main-ff);
+  --font-text-16med: 500 1.6rem/135% var(--main-ff);
+  --font-text-16reg: 400 1.6rem/140% var(--main-ff);
+  --font-text-15: 400 1.5rem/120% var(--main-ff);
+  --font-text-14: 400 1.4rem/150% var(--main-ff);
+  --font-text-13: 400 1.3rem/130% var(--main-ff);
+  --font-text-12: 400 1.2rem/150% var(--main-ff);
+  --font-text-10reg: 400 1rem/120% var(--main-ff);
+  --font-text-10med: 500 1rem/135% var(--main-ff);
+  --font-btn-big: 450 2.4rem/115% var(--main-ff);
+  --font-btn-small: 450 1.6rem/125% var(--main-ff);
+  --font-tags: 400 1.6rem/135% var(--main-ff);
+  --font-tabs: 400 1.6rem/135% var(--main-ff);
+  --font-caption: 400 1.8rem/120% var(--main-ff);
+  --font-quote-caption: 450 1.4rem/120% var(--main-ff);
+  --font-quote: 500 2.8rem/115% var(--main-ff);
+  --font-descriptor: 500 1.6rem/2rem var(--main-ff);
+  --font-links: 500 1.6rem/135% var(--main-ff);
+  --font-links450: 450 1.6rem/120% var(--main-ff);
+  --font-links500: 500 1.6rem/115% var(--main-ff);
+
+
+
+  /* colors */
+  --color-black: #1B1D1C;
+  --color-white: #fff;
+  --color-brown: #313131;
+  --color-red: #DD3C3B;
+  --color-green: #0AA373;
+  --color-bright-green: #2DFFB3;
+  --color-light-green: #CEEDE3;
+  --color-light-green2: #C2E8DC;
+  --color-light-green1: #E6F5F1;
+  --color-dark-grey: #9F9F9F;
+  --color-light-grey: #F5F5F5;
+  --color-bg: var(--color-white);
+  --color-white-alpha80: #FFFFFFCC;
+  --color-white-alpha50: #FFFFFF80;
+  --color-white-alpha10: #FFFFFF1A;
+  --color-white-alpha1: #FFFFFF03;
+  --color-green-alpha20: #0AA37333;
+  --color-brown-alpha15: #31313126;
+  --color-brown-alpha5: #3131310D;
+
+  --color-grey-600: #99a5b0;
+  --color-grey-300: #eff1f5;
+  --font-body: var(--font-text-body);
+
+  /* etc */
+  --transition: 100ms ease-in;
+  --container-padding: 4rem;
+  --grid-offset: 0.8rem;
+  --header-height: 11rem;
+}
+
+@import "./helpers/**/*";
+@import "./vendor/**/*";
+@import "./settings/**/*";
+@import "./UI/**/*";
+@import "./components/**/*";
+@import "./pages/**/*";
+
+@include mq(md) {
+  :root {
+    --header-height: 6.4rem;
+    --container-padding: 2rem;
+  }
+}
+
+@include mq(sm) {
+  :root {
+    --font-h1: 450 3rem/105% var(--main-ff);
+    --font-h2: 500 2.7rem/110% var(--main-ff);
+    --font-h3: 450 2.4rem/105% var(--main-ff);
+    --font-h4: 500 2rem/115% var(--main-ff);
+    --font-h5: 450 2.4rem/105% var(--main-ff);
+    --font-nums40: 300 4rem/115% var(--main-ff);
+    --font-text-24: 400 2.4rem/115% var(--main-ff);
+    --font-text-body: 400 1.4rem/130% var(--main-ff);
+    --font-text-16med: 500 1.6rem/115% var(--main-ff);
+    --font-text-16reg: 400 1.6rem/130% var(--main-ff);
+    --font-text-14: 450 1.4rem/120% var(--main-ff);
+    --font-btn-big: 450 1.4rem/135% var(--main-ff);
+    --font-btn-small: 450 1.4rem/135% var(--main-ff);
+    --font-tags: 400 1.2rem/135% var(--main-ff);
+    --font-tabs: 400 1.4rem/120% var(--main-ff);
+    --font-caption: 450 1.2rem/130% var(--main-ff);
+    --font-quote: 500 1.8rem/120% var(--main-ff);
+    --font-descriptor: 600 1rem/135% var(--main-ff);
+    --font-links: 450 1.4rem/120% var(--main-ff);
+    --container-padding: 0.8rem;
+  }
+}

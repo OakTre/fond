@@ -1,0 +1,36 @@
+mixin footer()
+  footer.footer
+    .site-container
+      .footer__container
+        .footer__section
+          +logo().footer__logo
+        .footer__section
+          .footer__list
+            a.footer__item(href='./' data-link) Проекты
+            a.footer__item(href='./' data-link) Сайт БФ Татнефть
+            a.footer__item(href='./' data-link) Подробная информация о грантах Фонда
+          .footer__list-wrapper
+            .footer__list
+              .footer__item.footer__item--label Программа Гранты
+              a.footer__item(href='./' data-link) grants@bf-tatneft.ru
+              a.footer__item(href='tel:+7 (8553) 38-71-37' data-link) +7 (8553) 38-71-37
+              a.footer__item(href='tel:+7 (987) 210-03-80' data-link) +7 (8553) 38-71-37
+            .footer__list
+              .footer__item.footer__item--label Приемная
+              a.footer__item(href='mailto:fond@bf-tatneft.ru' data-link) fond@bf-tatneft.ru
+              a.footer__item(href='tel:+7 (8553) 37-36-89' data-link) +7 (8553) 37-36-89
+              a.footer__item(href='tel:+7 (8553) 45-69-06' data-link) +7 (8553) 45-69-06
+          .footer__list
+            .footer__item.footer__item--offset
+              | 423450, Респ. Татарстан, Альметьевский р-н, г.&nbsp;Альметьевск, ул. Заслонова, дом 20
+            .footer__payment-info
+              ul
+                li ИНН: 1644017196
+                li КПП: 164401001
+                li ОГРН: 1021601626199
+                li ОКПО: 42130857
+              ul
+                li Расчетный счет: 40703810100730001062
+                li Банк: ПАО БАНК ЗЕНИТ
+                li БИК: 044525272
+                li Корр. счет: 30101810000000000272

@@ -1,0 +1,20 @@
+mixin card-image-icon(options)
+  - defaultOptions = {}
+  - defaultOptions.text = '' // - Заголовок
+  - defaultOptions.btnLabel = '' // - текст кнопки
+  - defaultOptions.btnType = 'default' //- тип кнопки
+  - defaultOptions.btnIcon = 'cup' // - икнока кнопки
+  - defaultOptions.href = './' // - ссылка
+
+  - options = Object.assign({}, defaultOptions, options || {})
+
+  article.card.card--variant--is-dark.card--variant--is-img-icon
+    p.card__heading-text= options.text
+    .card__image-icon-wrapper
+      +pictureLazy('icon-heart2.png')(class='card__image-icon')
+    +ui-button({
+      label: options.btnLabel,
+      type: options.btnType,
+      href: options.href,
+      icon: options.btnIcon
+    }).card__btn

@@ -1,6 +1,6 @@
-import Swiper, { Autoplay } from 'swiper/swiper-bundle'
+import Swiper, { Autoplay, Loop } from 'swiper/swiper-bundle'
 
-Swiper.use(Autoplay)
+Swiper.use([Autoplay, Loop])
 
 export default () => {
   const gallery = document.querySelector('.care__slider')
@@ -13,9 +13,11 @@ export default () => {
     watchSlidesProgress: true,
     loopedSlides: 16,
     loop: true,
-    speed: 1500,
+    loopAdditionalSlides: 16,
+    speed: 19000,
     autoplay: {
-      delay: 0
+      delay: 0,
+      disableOnInteraction: true,
     }
   })
 }

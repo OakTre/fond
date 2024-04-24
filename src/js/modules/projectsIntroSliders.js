@@ -1,4 +1,6 @@
-import Swiper from 'swiper/swiper-bundle'
+import Swiper, { Autoplay } from 'swiper/swiper-bundle'
+
+Swiper.use(Autoplay)
 
 export default () => {
   const sliders = document.querySelectorAll('.projects-intro__slider')
@@ -15,10 +17,10 @@ export default () => {
       centeredSlides: center,
       initialSlide: center ? 1 : 0,
       loop: true,
-      // autoplay: {
-      //   delay: '2500',
-      //   disableOnInteraction: false,
-      // },
+      autoplay: {
+        delay: '2500',
+        disableOnInteraction: false,
+      },
       breakpoints: {
         280: {
           direction: 'horizontal',

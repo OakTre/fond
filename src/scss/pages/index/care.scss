@@ -3,13 +3,17 @@
 
   &__container {
     border-radius: 4.8rem;
-    padding: 6.4rem 7.2rem;
+    padding: 4.8rem;
     background-color: var(--color-green);
     color: var(--color-white);
     min-height: 77.2rem;
     display: flex;
     flex-direction: column;
     overflow: hidden;
+    background-image: url("../images/bg-green-care.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 
     @include mq(md) {
       padding: 2rem;
@@ -42,7 +46,7 @@
 
   &__slide {
     width: auto;
-    height: auto;
+    height: 31.4rem;
     object-fit: contain;
     border-radius: 99.9rem;
 

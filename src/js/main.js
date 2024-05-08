@@ -11,6 +11,7 @@ import detailPageCustomCursor from './modules/detailPageCustomCursor'
 import detailPageReadMore from './modules/detailPageReadMore'
 import imageComparison from './modules/imageComparison'
 import parallaxColumns from './modules/parallaxColumns'
+import anchorLinks from './modules/buttonUp'
 
 documentReady(() => {
   window.___YOUR_PROJECT___API = { }
@@ -26,6 +27,7 @@ documentReady(() => {
   detailPageReadMore()
   imageComparison()
   parallaxColumns()
+  anchorLinks()
 })
 
 

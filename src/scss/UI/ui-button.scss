@@ -11,6 +11,7 @@
   --btn-transition: var(--transition);
 
   display: inline-flex;
+  gap: 2px;
   font: var(--f);
 
   &__icon-wrapper {
@@ -88,8 +89,8 @@
     }
 
     &--big {
-      --icon-wrap-w: 14rem;
-      --icon-wrap-h: 14rem;
+      --icon-wrap-w: 11rem;
+      --icon-wrap-h: 11rem;
       --icon-w: 4.8rem;
       --icon-h: 4.8rem;
       --icon-bg: var(--color-green);
@@ -97,6 +98,8 @@
       --bg: var(--color-light-green);
       --c: var(--color-green);
       --f: var(--font-btn-big);
+
+      gap: 0;
 
       &:hover {
         --bg: var(--color-light-green2);

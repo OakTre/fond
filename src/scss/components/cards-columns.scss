@@ -4,6 +4,7 @@
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   gap: var(--grid-offset);
+  overflow: hidden;
 
   &__column {
     grid-column: 4 span;

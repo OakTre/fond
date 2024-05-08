@@ -34,3 +34,8 @@ mixin footer()
                 li Банк: ПАО БАНК ЗЕНИТ
                 li БИК: 044525272
                 li Корр. счет: 30101810000000000272
+        .footer__section.footer__section--is-full-width
+          +social-links().footer__social-links
+          a.ui-button-up.footer__button-up(href="#header")
+            span Наверх
+            +icon-mono('arrow-line')(width="24" height="24" class="ui-button-up__icon")

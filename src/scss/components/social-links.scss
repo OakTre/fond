@@ -1,0 +1,28 @@
+.social-links {
+  display: flex;
+  gap: 8px;
+
+  &__item {
+  }
+
+  &__item-link {
+    width: 4rem;
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-light-grey);
+    color: var(--color-black);
+    border-radius: 50%;
+    transition: color var(--transition);
+
+    .icon {
+      width: 1.6rem;
+      height: 1.6rem;
+    }
+
+    &:hover {
+      color: var(--color-green);
+    }
+  }
+}

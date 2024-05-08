@@ -56,7 +56,7 @@
   --color-light-green1: #E6F5F1;
   --color-dark-grey: #9F9F9F;
   --color-light-grey: #F5F5F5;
-  --color-bg: var(--color-white);
+  --color-bg: var(--color-light-grey);
   --color-white-alpha80: #FFFFFFCC;
   --color-white-alpha50: #FFFFFF80;
   --color-white-alpha10: #FFFFFF1A;
@@ -73,7 +73,7 @@
   --transition: 100ms ease-in;
   --container-padding: 4rem;
   --grid-offset: 0.8rem;
-  --header-height: 11rem;
+  --header-height: 10rem;
 }
 
 @import "./helpers/**/*";

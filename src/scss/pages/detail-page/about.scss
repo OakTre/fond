@@ -1,7 +1,7 @@
 .detail-page-about {
   padding: 6.4rem 7.2rem;
   border-radius: 4.8rem;
-  background-color: var(--color-light-grey);
+  background-color: var(--color-white);
   margin-top: var(--grid-offset);
   margin-bottom: var(--grid-offset);
 
@@ -101,7 +101,7 @@
     padding: 3.2rem;
     display: flex;
     flex-direction: column;
-    background-color: var(--color-white);
+    background-color: var(--color-light-grey);
     color: var(--color-black);
 
     picture {

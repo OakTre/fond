@@ -20,6 +20,7 @@ export default () => {
       autoplay: {
         delay: '2500',
         disableOnInteraction: false,
+        reverseDirection: !!center,
       },
       breakpoints: {
         280: {

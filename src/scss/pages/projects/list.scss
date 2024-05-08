@@ -1,5 +1,6 @@
 .projects-list {
-  margin-bottom: 6rem;
+  margin-bottom: var(--grid-offset);
+  overflow: hidden;
 
   &__pagination {
     display: flex;
@@ -10,5 +11,9 @@
 
   &__load-button {
     margin-top: var(--grid-offset);
+  }
+
+  &__projects-page {
+    margin-bottom: 6rem;
   }
 }

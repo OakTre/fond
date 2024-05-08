@@ -1,0 +1,19 @@
+.ui-button-up {
+  display: inline-flex;
+  gap: 5px;
+  align-items: center;
+  font: var(--font-text-16reg);
+  color: var(--color-black);
+
+  &__icon {
+    fill: none;
+    stroke: currentColor;
+    transform: rotate(-90deg);
+    width: 1.6rem;
+    height: 1.6rem;
+  }
+
+  &:hover {
+    color: var(--color-dark-grey);
+  }
+}

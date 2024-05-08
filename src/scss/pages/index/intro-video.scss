@@ -8,6 +8,10 @@
     border-radius: 4.8rem;
     background-color: var(--color-white);
     overflow: hidden;
+
+    @include mq(md) {
+      height: 56rem;
+    }
   }
 
   &__bg {

@@ -31,4 +31,34 @@
   &.swiper-pagination-lock {
     display: none;
   }
+
+  &.is-autoplay {
+    .swiper-pagination-bullet {
+      &.swiper-pagination-bullet-active {
+        position: relative;
+        overflow: hidden;
+        background-color: var(--color-white-alpha10);
+
+        &::before {
+          position: absolute;
+          top: 0;
+          left: 0;
+          height: 100%;
+          background-color: var(--color-white);
+          animation: animate-width 6.5s linear;
+          content: "";
+        }
+      }
+    }
+  }
+}
+
+@keyframes animate-width {
+  from {
+    width: 0;
+  }
+
+  to {
+    width: 100%;
+  }
 }

@@ -1,5 +1,7 @@
-import Swiper, { Navigation } from 'swiper/swiper-bundle'
+import Swiper, { Navigation, Autoplay } from 'swiper/swiper-bundle'
 import { isTablet } from '../helpers/mediaQ'
+
+Swiper.use([Navigation, Autoplay])
 
 export default () => {
   const slider = isTablet()
@@ -18,6 +20,10 @@ export default () => {
     pagination: {
       el: slider.querySelector('.swiper-pagination'),
       clickable: true,
+    },
+    autoplay: {
+      delay: 6000,
+      disableOnInteraction: true,
     },
     breakpoints: {
       280: {

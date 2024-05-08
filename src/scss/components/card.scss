@@ -257,6 +257,11 @@
         transition: all var(--card-transiton);
       }
 
+      .card__btn {
+        --bg: var(--color-light-grey);
+        --icon-bg: var(--color-light-grey);
+      }
+
       &:hover {
         .card__info {
           max-height: 100%;

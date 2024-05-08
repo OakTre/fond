@@ -16,21 +16,9 @@
     <link rel="stylesheet" href="assets/css/style.min.css?v=0.0.0.0">
   </head>
   <body class="page-home">
-    <div class="preloader">
-      <div class="preloader__content">
-        <div class="preloader__logo preloader__logo--variant--small-logo">
-          <img class="preloader-logo__img preloader-logo__img--small" src="assets/images/logo-small-colored.svg" alt="">
-          <div class="preloader__logo-foreground preloader__logo-foreground--variant--small-logo"></div>
-        </div>
-        <div class="preloader__logo preloader__logo--variant--text-logo">
-          <img class="preloader-logo__img preloader-logo__img--text" src="assets/images/logo-text.svg" alt="">
-          <div class="preloader__logo-foreground preloader__logo-foreground--variant--text-logo"></div>
-        </div>
-      </div>
-    </div>
     <div class="page-wrapper">
 
-      <header class="header">
+      <header class="header" id="header">
         <div class="site-container">
           <div class="header__container">
             <div class="header__section">
@@ -39,7 +27,7 @@
               </a>
             </div>
             <div class="header__section">
-              <a class="header__link" href="./" data-green="data-green">
+              <a class="header__link" href="https://bf-tatneft.ru/" target="_blank" data-green="data-green">
                 <svg class="icon icon-verificated" width="16" height="16">
                   <use xlink:href="assets/images/sprites/sprite-mono.svg#verificated"></use>
                 </svg>Гранты ПАО «Татнефть»
@@ -53,15 +41,11 @@
                     <a class="nav__link" href="./" data-link="data-link">Контакты</a>
                   </li>
                   <li class="nav__item">
-                    <a class="nav__link" href="./" data-link="data-link">О конкурсах</a>
+                    <a class="nav__link" href="https://bf-tatneft.ru/fond2/?3program" target="_blank" data-link="data-link">О конкурсах</a>
                   </li>
                 </ul>
               </nav>
               <a class="header__tel" href="tel:+7 (8553) 37-36-89" data-grey="data-grey">+7 (8553) 37-36-89</a>
-              <a class="header__btn" href="./" data-green="data-green">Вход<svg class="icon icon-logout" width="22" height="22">
-                  <use xlink:href="assets/images/sprites/sprite-mono.svg#logout"></use>
-                </svg>
-              </a>
               <button class="header__burger">
                 <svg class="icon icon-burger" width="20" height="20">
                   <use xlink:href="assets/images/sprites/sprite-mono.svg#burger"></use>
@@ -322,6 +306,29 @@
                   </ul>
                 </div>
               </div>
+            </div>
+            <div class="footer__section footer__section--is-full-width">
+              <ul class="social-links">
+                <li class="social-links__item">
+                  <a class="social-links__item-link" href="./" target="_blank">
+                    <svg class="icon icon-yt" width="16" height="16">
+                      <use xlink:href="assets/images/sprites/sprite-mono.svg#yt"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social-links__item">
+                  <a class="social-links__item-link" href="./" target="_blank">
+                    <svg class="icon icon-vk" width="16" height="16">
+                      <use xlink:href="assets/images/sprites/sprite-mono.svg#vk"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+              <a class="ui-button-up footer__button-up" href="#header"><span>Наверх</span>
+                <svg class="icon icon-arrow-line ui-button-up__icon" width="24" height="24">
+                  <use xlink:href="assets/images/sprites/sprite-mono.svg#arrow-line"></use>
+                </svg>
+              </a>
             </div>
           </div>
         </div>

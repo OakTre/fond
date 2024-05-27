@@ -25,4 +25,16 @@
       color: var(--color-green);
     }
   }
+
+  &--variant--green {
+    .social-links__item-link {
+      background-color: var(--color-white);
+      border: 1px solid var(--color-brown-alpha15);
+      color: var(--color-green);
+
+      &:hover {
+        color: var(--color-dark);
+      }
+    }
+  }
 }

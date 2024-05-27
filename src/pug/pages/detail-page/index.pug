@@ -2,22 +2,31 @@ main.page-main.main
   section.section.detail-page
     .site-container
       .detail-page__container.detail-page-intro
-        .detail-page__block
+        .detail-page__block.detail-page__block--is-flex
           a.detail-page__text-icon.detail-page__text-icon--is-link(href='./')
             +icon-mono('arrow-line')(width="16" height="16")
             | Все проекты
+
+          +social-links().detail-page__social-links.social-links--variant--green
         .detail-page__block
-          .detail-page__text-icon.detail-page__text-icon-offset
-            +icon-mono('calendar')(width="16" height="16")
-            | 13 ноября 2023
-          .detail-page__text-icon
-            +icon-mono('time')(width="16" height="16")
-            | 3 мин
+          .detail-page__social-wrapper
+            .detail-page__text-icon.detail-page__text-icon-offset
+              +icon-mono('calendar')(width="16" height="16")
+              | 13 ноября 2023
+            .detail-page__text-icon
+              +icon-mono('time')(width="16" height="16")
+              | 3 мин
+
+            +social-links().detail-page__social-links--is-mobile.social-links--variant--green
 
           .detail-page__heading
             h1 #[span «Татнефть»] пригласила в регион студентов медиков со всей России
-
-      +pictureLazy('detailed-img.jpg')(class="detail-page__intro-img")
+      .detail-page__intro-img-wrapper
+        +ui-tag({
+          content: 'Образование и наука',
+          icon: ''
+        }).detail-page__intro-category
+        +pictureLazy('detailed-img.jpg')(class="detail-page__intro-img")
 
     include about
     include content

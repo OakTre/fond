@@ -65,6 +65,11 @@
     }
   }
 
+  &__heading-imgs {
+    display: inline-flex;
+    gap: 0.3rem;
+  }
+
   &__text {
     margin-top: auto;
     max-width: 52rem;

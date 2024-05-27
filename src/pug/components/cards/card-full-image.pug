@@ -9,13 +9,14 @@ mixin card-full-image(options)
 
   - options = Object.assign({}, defaultOptions, options || {})
 
-  article.card.card--variant--is-full-img(class=`card--size--${options.size}`)
-    .card__bg.card__bg--is-image
-      +pictureLazy(options.img).card__bg-image
-    h3.card__heading
-      a(href="./")= options.title
-    +ui-button({
-      label: options.btnLabel,
-      type: options.btnType,
-      isNotControl: true
-    }).card__btn
+  .card-wrapper
+    article.card.card--variant--is-full-img(class=`card--size--${options.size}`)
+      .card__bg.card__bg--is-image
+        +pictureLazy(options.img).card__bg-image
+      h3.card__heading
+        a(href="./")= options.title
+      +ui-button({
+        label: options.btnLabel,
+        type: options.btnType,
+        isNotControl: true
+      }).card__btn

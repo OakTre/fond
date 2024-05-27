@@ -12,9 +12,10 @@ export default () => {
     slidesPerView: 'auto',
     watchSlidesProgress: true,
     loopedSlides: 16,
+    allowTouchMove: false,
     loop: true,
     loopAdditionalSlides: 16,
-    speed: 19000,
+    speed: 2000,
     autoplay: {
       delay: 0,
       disableOnInteraction: true,

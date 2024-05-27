@@ -11,20 +11,21 @@ mixin card(options)
 
   - options = Object.assign({}, defaultOptions, options || {})
 
-  article.card(class=`card--size--${options.size}`)&attributes(attributes)
-    //- блок для фона
-    block
-    +ui-tag({
-      content: options.tagLabel,
-      icon: options.tagIcon
-    }).card__tag
-    header.card__info
-      h3.card__heading
-        a(href="./")= options.title
-      p.card__text= options.text
+  .card-wrapper
+    article.card(class=`card--size--${options.size}`)&attributes(attributes)
+      //- блок для фона
+      block
+      +ui-tag({
+        content: options.tagLabel,
+        icon: options.tagIcon
+      }).card__tag
+      header.card__info
+        h3.card__heading
+          a(href="./")= options.title
+        p.card__text= options.text
 
-      +ui-button({
-        label: options.btnLabel,
-        type: options.btnType,
-        isNotControl: true
-      }).card__btn
+        +ui-button({
+          label: options.btnLabel,
+          type: options.btnType,
+          isNotControl: true
+        }).card__btn

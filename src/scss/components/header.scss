@@ -147,4 +147,10 @@
       height: 1.6rem;
     }
   }
+
+  &--variant--grey {
+    .header__container {
+      background-color: var(--color-light-grey);
+    }
+  }
 }

@@ -1,5 +1,6 @@
 mixin header()
-  header.header(id="header")
+  - isWhiteBg = isGreyHeader ? 'header--variant--grey' : ''
+  header.header(id="header" class=isWhiteBg)
     .site-container
       .header__container
         .header__section

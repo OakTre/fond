@@ -64,6 +64,12 @@
       }
     }
 
+    picture {
+      img {
+        margin: 0;
+      }
+    }
+
     span {
       display: block;
       margin-top: 1rem;
@@ -210,13 +216,24 @@
   &__quote-text {
     font: var(--font-quote);
     margin-bottom: 1.6rem;
+
+    &::before {
+      width: 9.2rem;
+      height: 0.1rem;
+      display: inline-block;
+      content: "";
+
+      @include mq(md) {
+        width: 3rem;
+      }
+    }
   }
 
   &__quote-author {
     display: flex;
     flex-direction: column;
     gap: 0.6rem;
-    padding-left: 7.8%;
+    padding-left: 9.2rem;
     font: var(--font-quote-caption);
     max-width: 41rem;
     color: var(--color-dark-grey);
@@ -232,6 +249,10 @@
         font: var(--font-text-14);
       }
     }
+
+    @include mq(md) {
+      padding-left: 3rem;
+    }
   }
 
   &__video {
@@ -243,6 +264,7 @@
     align-items: center;
     justify-content: center;
     margin-bottom: 6rem;
+    aspect-ratio: 16/9;
 
     @include mq(md) {
       border-radius: 3.2rem;
@@ -259,8 +281,8 @@
 
   &__video-bg {
     width: 100%;
-    height: auto;
-    object-fit: contain;
+    height: 100%;
+    object-fit: cover;
     border-radius: 4.8rem;
 
     @include mq(md) {
@@ -272,4 +294,8 @@
       height: 100%;
     }
   }
+}
+
+.page-detail {
+  background-color: var(--color-white);
 }

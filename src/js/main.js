@@ -12,6 +12,7 @@ import detailPageReadMore from './modules/detailPageReadMore'
 import imageComparison from './modules/imageComparison'
 import parallaxColumns from './modules/parallaxColumns'
 import anchorLinks from './modules/buttonUp'
+import initYtVideo from './modules/initYtVideo'
 
 documentReady(() => {
   window.___YOUR_PROJECT___API = { }
@@ -28,6 +29,7 @@ documentReady(() => {
   imageComparison()
   parallaxColumns()
   anchorLinks()
+  initYtVideo()
 })
 
 

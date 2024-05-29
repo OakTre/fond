@@ -345,6 +345,15 @@
         padding: 2rem;
       }
     }
+
+    &--bg-grey {
+      --bg: var(--color-light-grey) !important;
+
+      .card__btn {
+        --bg: var(--color-white);
+        --icon-bg: var(--color-white);
+      }
+    }
   }
 
   &--size {

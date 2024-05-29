@@ -16,9 +16,10 @@
   .detail-page__container.detail-page__images
     .detail-page__block
       .detail-page-content__img
-        img(src='assets/images/doctor.jpg')
-        span
-          | Фото: © Сергей Ратанов
+        picture
+          img(src='assets/images/doctor.jpg')
+          span
+            | Фото: © Сергей Ратанов
     .detail-page__block
       .detail-page-content__img
         img(src='assets/images/concert.jpg')
@@ -26,9 +27,10 @@
 
   .detail-page__images.detail-page__images--is-mobile
     .detail-page-content__img
-      img(src='assets/images/doctor.jpg')
-      span
-        | Фото: © Сергей Ратанов
+      picture
+        img(src='assets/images/doctor.jpg')
+        span
+          | Фото: © Сергей Ратанов
     .detail-page-content__img
       img(src='assets/images/concert.jpg')
       span
@@ -58,7 +60,7 @@
     .detail-page__block
       .detail-page-content__quote
         .detail-page-content__quote-text
-          |            Мы устраиваемся санитарами для того, чтобы ухаживать
+          | Мы устраиваемся санитарами для того, чтобы ухаживать
           | за пациентами. Внимание, забота и хороший уход будут
           | их радовать, улучшать настроение и душевное состояние.
           | А это все очень сильно помогает в выздоровлении пациента.
@@ -89,14 +91,14 @@
     .detail-page__block
       .detail-page-content__quote
         .detail-page-content__quote-text
-          |            Благодаря этому проекту наши границы
+          | Благодаря этому проекту наши границы
           | расширяются. Это дружба и взаимодействие в медицинском сообществе.
           | Мы готовим будущих врачей, которые действительно будут знать, как правильно лечить
           | и оказывать медицинскую помощь населению не только нашей республики, но и всей России.
         .detail-page-content__quote-author
           | — подчеркнул главврач ЛЦРБ Рим Амеров
 
-  .detail-page-content__video
+  .detail-page-content__video.js-play-video(data-video-url="https://www.youtube.com/watch?v=l5o10zKLanc")
     +ui-button-play().detail-page-content__video-play
     img(src="assets/images/doctor3.jpg" class="detail-page-content__video-bg")
 

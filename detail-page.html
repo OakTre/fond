@@ -15,22 +15,10 @@
     <title>Детальная страница | Название сайта</title>
     <link rel="stylesheet" href="assets/css/style.min.css?v=0.0.0.1">
   </head>
-  <body class="page-home">
-    <div class="preloader">
-      <div class="preloader__content">
-        <div class="preloader__logo preloader__logo--variant--small-logo">
-          <img class="preloader-logo__img preloader-logo__img--small" src="assets/images/logo-small-colored.svg" alt="">
-          <div class="preloader__logo-foreground preloader__logo-foreground--variant--small-logo"></div>
-        </div>
-        <div class="preloader__logo preloader__logo--variant--text-logo">
-          <img class="preloader-logo__img preloader-logo__img--text" src="assets/images/logo-text.svg" alt="">
-          <div class="preloader__logo-foreground preloader__logo-foreground--variant--text-logo"></div>
-        </div>
-      </div>
-    </div>
+  <body class="page-detail">
     <div class="page-wrapper">
 
-      <header class="header" id="header">
+      <header class="header header--variant--grey" id="header">
         <div class="site-container">
           <div class="header__container">
             <div class="header__section">
@@ -72,33 +60,72 @@
         <section class="section detail-page">
           <div class="site-container">
             <div class="detail-page__container detail-page-intro">
-              <div class="detail-page__block">
+              <div class="detail-page__block detail-page__block--is-flex">
                 <a class="detail-page__text-icon detail-page__text-icon--is-link" href="./">
                   <svg class="icon icon-arrow-line" width="16" height="16">
                     <use xlink:href="assets/images/sprites/sprite-mono.svg#arrow-line"></use>
                   </svg>Все проекты
                 </a>
+                <ul class="social-links detail-page__social-links social-links--variant--green">
+                  <li class="social-links__item">
+                    <a class="social-links__item-link" href="./" target="_blank">
+                      <svg class="icon icon-yt" width="16" height="16">
+                        <use xlink:href="assets/images/sprites/sprite-mono.svg#yt"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="social-links__item">
+                    <a class="social-links__item-link" href="./" target="_blank">
+                      <svg class="icon icon-vk" width="16" height="16">
+                        <use xlink:href="assets/images/sprites/sprite-mono.svg#vk"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
               </div>
               <div class="detail-page__block">
-                <div class="detail-page__text-icon detail-page__text-icon-offset">
-                  <svg class="icon icon-calendar" width="16" height="16">
-                    <use xlink:href="assets/images/sprites/sprite-mono.svg#calendar"></use>
-                  </svg>13 ноября 2023
-                </div>
-                <div class="detail-page__text-icon">
-                  <svg class="icon icon-time" width="16" height="16">
-                    <use xlink:href="assets/images/sprites/sprite-mono.svg#time"></use>
-                  </svg>3 мин
+                <div class="detail-page__social-wrapper">
+                  <div class="detail-page__text-icon detail-page__text-icon-offset">
+                    <svg class="icon icon-calendar" width="16" height="16">
+                      <use xlink:href="assets/images/sprites/sprite-mono.svg#calendar"></use>
+                    </svg>13 ноября 2023
+                  </div>
+                  <div class="detail-page__text-icon">
+                    <svg class="icon icon-time" width="16" height="16">
+                      <use xlink:href="assets/images/sprites/sprite-mono.svg#time"></use>
+                    </svg>3 мин
+                  </div>
+                  <ul class="social-links detail-page__social-links--is-mobile social-links--variant--green">
+                    <li class="social-links__item">
+                      <a class="social-links__item-link" href="./" target="_blank">
+                        <svg class="icon icon-yt" width="16" height="16">
+                          <use xlink:href="assets/images/sprites/sprite-mono.svg#yt"></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="social-links__item">
+                      <a class="social-links__item-link" href="./" target="_blank">
+                        <svg class="icon icon-vk" width="16" height="16">
+                          <use xlink:href="assets/images/sprites/sprite-mono.svg#vk"></use>
+                        </svg>
+                      </a>
+                    </li>
+                  </ul>
                 </div>
                 <div class="detail-page__heading">
                   <h1><span>«Татнефть»</span>пригласила в регион студентов медиков со всей России</h1>
                 </div>
               </div>
             </div>
-            <picture>
-              <source type="image/webp" data-srcset="assets/images/detailed-img.webp" alt="Описание картинки" srcset="assets/images/placeholder.png">
-              <img class="lazyload detail-page__intro-img" data-src="assets/images/detailed-img.jpg" src="#" alt="Описание картинки">
-            </picture>
+            <div class="detail-page__intro-img-wrapper">
+              <div class="ui-tag detail-page__intro-category">
+                <div class="ui-tag__content">Образование и наука</div>
+              </div>
+              <picture>
+                <source type="image/webp" data-srcset="assets/images/detailed-img.webp" alt="Описание картинки" srcset="assets/images/placeholder.png">
+                <img class="lazyload detail-page__intro-img" data-src="assets/images/detailed-img.jpg" src="#" alt="Описание картинки">
+              </picture>
+            </div>
           </div>
           <div class="site-container">
             <div class="detail-page-about">
@@ -174,7 +201,9 @@
             <div class="detail-page__container detail-page__images">
               <div class="detail-page__block">
                 <div class="detail-page-content__img">
-                  <img src="assets/images/doctor.jpg"><span>Фото: © Сергей Ратанов</span>
+                  <picture>
+                    <img src="assets/images/doctor.jpg"><span>Фото: © Сергей Ратанов</span>
+                  </picture>
                 </div>
               </div>
               <div class="detail-page__block">
@@ -185,7 +214,9 @@
             </div>
             <div class="detail-page__images detail-page__images--is-mobile">
               <div class="detail-page-content__img">
-                <img src="assets/images/doctor.jpg"><span>Фото: © Сергей Ратанов</span>
+                <picture>
+                  <img src="assets/images/doctor.jpg"><span>Фото: © Сергей Ратанов</span>
+                </picture>
               </div>
               <div class="detail-page-content__img">
                 <img src="assets/images/concert.jpg"><span></span>
@@ -205,7 +236,7 @@
               <div class="detail-page__block"></div>
               <div class="detail-page__block">
                 <div class="detail-page-content__quote">
-                  <div class="detail-page-content__quote-text">           Мы устраиваемся санитарами для того, чтобы ухаживать за пациентами. Внимание, забота и хороший уход будут их радовать, улучшать настроение и душевное состояние. А это все очень сильно помогает в выздоровлении пациента.</div>
+                  <div class="detail-page-content__quote-text">Мы устраиваемся санитарами для того, чтобы ухаживать за пациентами. Внимание, забота и хороший уход будут их радовать, улучшать настроение и душевное состояние. А это все очень сильно помогает в выздоровлении пациента.</div>
                   <div class="detail-page-content__quote-author"><span>Никита Алтухов</span>студент 1 курса Воронежского государственного медицинского университета</div>
                 </div>
               </div>
@@ -235,12 +266,12 @@
               <div class="detail-page__block"></div>
               <div class="detail-page__block">
                 <div class="detail-page-content__quote">
-                  <div class="detail-page-content__quote-text">           Благодаря этому проекту наши границы расширяются. Это дружба и взаимодействие в медицинском сообществе. Мы готовим будущих врачей, которые действительно будут знать, как правильно лечить и оказывать медицинскую помощь населению не только нашей республики, но и всей России.</div>
+                  <div class="detail-page-content__quote-text">Благодаря этому проекту наши границы расширяются. Это дружба и взаимодействие в медицинском сообществе. Мы готовим будущих врачей, которые действительно будут знать, как правильно лечить и оказывать медицинскую помощь населению не только нашей республики, но и всей России.</div>
                   <div class="detail-page-content__quote-author">— подчеркнул главврач ЛЦРБ Рим Амеров</div>
                 </div>
               </div>
             </div>
-            <div class="detail-page-content__video">
+            <div class="detail-page-content__video js-play-video" data-video-url="https://www.youtube.com/watch?v=l5o10zKLanc">
               <button class="ui-button-play detail-page-content__video-play">
                 <svg class="icon icon-play ui-button-play__icon" wdth="14" height="21">
                   <use xlink:href="assets/images/sprites/sprite-mono.svg#play"></use>
@@ -351,114 +382,124 @@
             <div class="swiper read-more__slider">
               <div class="swiper-wrapper">
                 <div class="swiper-slide">
-                  <article class="card card--size--normal card--variant--with-image">
-                    <div class="card__bg card__bg--is-image">
-                      <picture>
-                        <source type="image/webp" data-srcset="assets/images/card-image-girl.webp" alt="Описание картинки" srcset="assets/images/placeholder.png">
-                        <img class="lazyload card__bg-image" data-src="assets/images/card-image-girl.jpg" src="#" alt="Описание картинки">
-                      </picture>
-                    </div>
-                    <div class="ui-tag card__tag">
-                      <div class="ui-tag__content">Культура</div>
-                    </div>
-
-                    <header class="card__info">
-                      <h3 class="card__heading">
-                        <a href="./">Инклюзивная танцевальная школа Рубаха</a>
-                      </h3>
-                      <p class="card__text">В первый день зимы, 1 декабря 2022 года, в стенахнашего Дворца культуры прошел Всероссийский фестиваль интегральноготворчества для людей с ограниченными возможностями здоровья — «ЛУЧ — 2022.</p>
-                      <div class="ui-button ui-button--size--auto ui-button--variant--default card__btn" href=""><span class="ui-button__icon-wrapper"><svg class="icon icon-arrow-line ui-button__icon" width="24" height="24"><use xlink:href="assets/images/sprites/sprite-mono.svg#arrow-line"></use></svg></span><span class="ui-button__content">Подробнее о проекте</span>
+                  <div class="card-wrapper">
+                    <article class="card card--size--normal card--variant--with-image card--variant--bg-grey">
+                      <div class="card__bg card__bg--is-image">
+                        <picture>
+                          <source type="image/webp" data-srcset="assets/images/card-image-girl.webp" alt="Описание картинки" srcset="assets/images/placeholder.png">
+                          <img class="lazyload card__bg-image" data-src="assets/images/card-image-girl.jpg" src="#" alt="Описание картинки">
+                        </picture>
                       </div>
-                    </header>
-                  </article>
+                      <div class="ui-tag card__tag">
+                        <div class="ui-tag__content">Культура</div>
+                      </div>
+
+                      <header class="card__info">
+                        <h3 class="card__heading">
+                          <a href="./">Инклюзивная танцевальная школа Рубаха</a>
+                        </h3>
+                        <p class="card__text">В первый день зимы, 1 декабря 2022 года, в стенахнашего Дворца культуры прошел Всероссийский фестиваль интегральноготворчества для людей с ограниченными возможностями здоровья — «ЛУЧ — 2022.</p>
+                        <div class="ui-button ui-button--size--auto ui-button--variant--default card__btn" href=""><span class="ui-button__icon-wrapper"><svg class="icon icon-arrow-line ui-button__icon" width="24" height="24"><use xlink:href="assets/images/sprites/sprite-mono.svg#arrow-line"></use></svg></span><span class="ui-button__content">Подробнее о проекте</span>
+                        </div>
+                      </header>
+                    </article>
+                  </div>
                 </div>
                 <div class="swiper-slide">
-                  <article class="card card--size--normal card--variant--with-image">
-                    <div class="card__bg card__bg--is-image">
-                      <picture>
-                        <source type="image/webp" data-srcset="assets/images/card-image-girl.webp" alt="Описание картинки" srcset="assets/images/placeholder.png">
-                        <img class="lazyload card__bg-image" data-src="assets/images/card-image-girl.jpg" src="#" alt="Описание картинки">
-                      </picture>
-                    </div>
-                    <div class="ui-tag card__tag">
-                      <div class="ui-tag__content">Культура</div>
-                    </div>
-
-                    <header class="card__info">
-                      <h3 class="card__heading">
-                        <a href="./">Инклюзивная танцевальная школа Рубаха</a>
-                      </h3>
-                      <p class="card__text">В первый день зимы, 1 декабря 2022 года, в стенахнашего Дворца культуры прошел Всероссийский фестиваль интегральноготворчества для людей с ограниченными возможностями здоровья — «ЛУЧ — 2022.</p>
-                      <div class="ui-button ui-button--size--auto ui-button--variant--default card__btn" href=""><span class="ui-button__icon-wrapper"><svg class="icon icon-arrow-line ui-button__icon" width="24" height="24"><use xlink:href="assets/images/sprites/sprite-mono.svg#arrow-line"></use></svg></span><span class="ui-button__content">Подробнее о проекте</span>
+                  <div class="card-wrapper">
+                    <article class="card card--size--normal card--variant--with-image card--variant--bg-grey">
+                      <div class="card__bg card__bg--is-image">
+                        <picture>
+                          <source type="image/webp" data-srcset="assets/images/card-image-girl.webp" alt="Описание картинки" srcset="assets/images/placeholder.png">
+                          <img class="lazyload card__bg-image" data-src="assets/images/card-image-girl.jpg" src="#" alt="Описание картинки">
+                        </picture>
                       </div>
-                    </header>
-                  </article>
+                      <div class="ui-tag card__tag">
+                        <div class="ui-tag__content">Культура</div>
+                      </div>
+
+                      <header class="card__info">
+                        <h3 class="card__heading">
+                          <a href="./">Инклюзивная танцевальная школа Рубаха</a>
+                        </h3>
+                        <p class="card__text">В первый день зимы, 1 декабря 2022 года, в стенахнашего Дворца культуры прошел Всероссийский фестиваль интегральноготворчества для людей с ограниченными возможностями здоровья — «ЛУЧ — 2022.</p>
+                        <div class="ui-button ui-button--size--auto ui-button--variant--default card__btn" href=""><span class="ui-button__icon-wrapper"><svg class="icon icon-arrow-line ui-button__icon" width="24" height="24"><use xlink:href="assets/images/sprites/sprite-mono.svg#arrow-line"></use></svg></span><span class="ui-button__content">Подробнее о проекте</span>
+                        </div>
+                      </header>
+                    </article>
+                  </div>
                 </div>
                 <div class="swiper-slide">
-                  <article class="card card--size--normal card--variant--with-image">
-                    <div class="card__bg card__bg--is-image">
-                      <picture>
-                        <source type="image/webp" data-srcset="assets/images/card-image-girl.webp" alt="Описание картинки" srcset="assets/images/placeholder.png">
-                        <img class="lazyload card__bg-image" data-src="assets/images/card-image-girl.jpg" src="#" alt="Описание картинки">
-                      </picture>
-                    </div>
-                    <div class="ui-tag card__tag">
-                      <div class="ui-tag__content">Культура</div>
-                    </div>
-
-                    <header class="card__info">
-                      <h3 class="card__heading">
-                        <a href="./">Инклюзивная танцевальная школа Рубаха</a>
-                      </h3>
-                      <p class="card__text">В первый день зимы, 1 декабря 2022 года, в стенахнашего Дворца культуры прошел Всероссийский фестиваль интегральноготворчества для людей с ограниченными возможностями здоровья — «ЛУЧ — 2022.</p>
-                      <div class="ui-button ui-button--size--auto ui-button--variant--default card__btn" href=""><span class="ui-button__icon-wrapper"><svg class="icon icon-arrow-line ui-button__icon" width="24" height="24"><use xlink:href="assets/images/sprites/sprite-mono.svg#arrow-line"></use></svg></span><span class="ui-button__content">Подробнее о проекте</span>
+                  <div class="card-wrapper">
+                    <article class="card card--size--normal card--variant--with-image card--variant--bg-grey">
+                      <div class="card__bg card__bg--is-image">
+                        <picture>
+                          <source type="image/webp" data-srcset="assets/images/card-image-girl.webp" alt="Описание картинки" srcset="assets/images/placeholder.png">
+                          <img class="lazyload card__bg-image" data-src="assets/images/card-image-girl.jpg" src="#" alt="Описание картинки">
+                        </picture>
                       </div>
-                    </header>
-                  </article>
+                      <div class="ui-tag card__tag">
+                        <div class="ui-tag__content">Культура</div>
+                      </div>
+
+                      <header class="card__info">
+                        <h3 class="card__heading">
+                          <a href="./">Инклюзивная танцевальная школа Рубаха</a>
+                        </h3>
+                        <p class="card__text">В первый день зимы, 1 декабря 2022 года, в стенахнашего Дворца культуры прошел Всероссийский фестиваль интегральноготворчества для людей с ограниченными возможностями здоровья — «ЛУЧ — 2022.</p>
+                        <div class="ui-button ui-button--size--auto ui-button--variant--default card__btn" href=""><span class="ui-button__icon-wrapper"><svg class="icon icon-arrow-line ui-button__icon" width="24" height="24"><use xlink:href="assets/images/sprites/sprite-mono.svg#arrow-line"></use></svg></span><span class="ui-button__content">Подробнее о проекте</span>
+                        </div>
+                      </header>
+                    </article>
+                  </div>
                 </div>
                 <div class="swiper-slide">
-                  <article class="card card--size--normal card--variant--with-image">
-                    <div class="card__bg card__bg--is-image">
-                      <picture>
-                        <source type="image/webp" data-srcset="assets/images/card-image-girl.webp" alt="Описание картинки" srcset="assets/images/placeholder.png">
-                        <img class="lazyload card__bg-image" data-src="assets/images/card-image-girl.jpg" src="#" alt="Описание картинки">
-                      </picture>
-                    </div>
-                    <div class="ui-tag card__tag">
-                      <div class="ui-tag__content">Культура</div>
-                    </div>
-
-                    <header class="card__info">
-                      <h3 class="card__heading">
-                        <a href="./">Инклюзивная танцевальная школа Рубаха</a>
-                      </h3>
-                      <p class="card__text">В первый день зимы, 1 декабря 2022 года, в стенахнашего Дворца культуры прошел Всероссийский фестиваль интегральноготворчества для людей с ограниченными возможностями здоровья — «ЛУЧ — 2022.</p>
-                      <div class="ui-button ui-button--size--auto ui-button--variant--default card__btn" href=""><span class="ui-button__icon-wrapper"><svg class="icon icon-arrow-line ui-button__icon" width="24" height="24"><use xlink:href="assets/images/sprites/sprite-mono.svg#arrow-line"></use></svg></span><span class="ui-button__content">Подробнее о проекте</span>
+                  <div class="card-wrapper">
+                    <article class="card card--size--normal card--variant--with-image card--variant--bg-grey">
+                      <div class="card__bg card__bg--is-image">
+                        <picture>
+                          <source type="image/webp" data-srcset="assets/images/card-image-girl.webp" alt="Описание картинки" srcset="assets/images/placeholder.png">
+                          <img class="lazyload card__bg-image" data-src="assets/images/card-image-girl.jpg" src="#" alt="Описание картинки">
+                        </picture>
                       </div>
-                    </header>
-                  </article>
+                      <div class="ui-tag card__tag">
+                        <div class="ui-tag__content">Культура</div>
+                      </div>
+
+                      <header class="card__info">
+                        <h3 class="card__heading">
+                          <a href="./">Инклюзивная танцевальная школа Рубаха</a>
+                        </h3>
+                        <p class="card__text">В первый день зимы, 1 декабря 2022 года, в стенахнашего Дворца культуры прошел Всероссийский фестиваль интегральноготворчества для людей с ограниченными возможностями здоровья — «ЛУЧ — 2022.</p>
+                        <div class="ui-button ui-button--size--auto ui-button--variant--default card__btn" href=""><span class="ui-button__icon-wrapper"><svg class="icon icon-arrow-line ui-button__icon" width="24" height="24"><use xlink:href="assets/images/sprites/sprite-mono.svg#arrow-line"></use></svg></span><span class="ui-button__content">Подробнее о проекте</span>
+                        </div>
+                      </header>
+                    </article>
+                  </div>
                 </div>
                 <div class="swiper-slide">
-                  <article class="card card--size--normal card--variant--with-image">
-                    <div class="card__bg card__bg--is-image">
-                      <picture>
-                        <source type="image/webp" data-srcset="assets/images/card-image-girl.webp" alt="Описание картинки" srcset="assets/images/placeholder.png">
-                        <img class="lazyload card__bg-image" data-src="assets/images/card-image-girl.jpg" src="#" alt="Описание картинки">
-                      </picture>
-                    </div>
-                    <div class="ui-tag card__tag">
-                      <div class="ui-tag__content">Культура</div>
-                    </div>
-
-                    <header class="card__info">
-                      <h3 class="card__heading">
-                        <a href="./">Инклюзивная танцевальная школа Рубаха</a>
-                      </h3>
-                      <p class="card__text">В первый день зимы, 1 декабря 2022 года, в стенахнашего Дворца культуры прошел Всероссийский фестиваль интегральноготворчества для людей с ограниченными возможностями здоровья — «ЛУЧ — 2022.</p>
-                      <div class="ui-button ui-button--size--auto ui-button--variant--default card__btn" href=""><span class="ui-button__icon-wrapper"><svg class="icon icon-arrow-line ui-button__icon" width="24" height="24"><use xlink:href="assets/images/sprites/sprite-mono.svg#arrow-line"></use></svg></span><span class="ui-button__content">Подробнее о проекте</span>
+                  <div class="card-wrapper">
+                    <article class="card card--size--normal card--variant--with-image card--variant--bg-grey">
+                      <div class="card__bg card__bg--is-image">
+                        <picture>
+                          <source type="image/webp" data-srcset="assets/images/card-image-girl.webp" alt="Описание картинки" srcset="assets/images/placeholder.png">
+                          <img class="lazyload card__bg-image" data-src="assets/images/card-image-girl.jpg" src="#" alt="Описание картинки">
+                        </picture>
                       </div>
-                    </header>
-                  </article>
+                      <div class="ui-tag card__tag">
+                        <div class="ui-tag__content">Культура</div>
+                      </div>
+
+                      <header class="card__info">
+                        <h3 class="card__heading">
+                          <a href="./">Инклюзивная танцевальная школа Рубаха</a>
+                        </h3>
+                        <p class="card__text">В первый день зимы, 1 декабря 2022 года, в стенахнашего Дворца культуры прошел Всероссийский фестиваль интегральноготворчества для людей с ограниченными возможностями здоровья — «ЛУЧ — 2022.</p>
+                        <div class="ui-button ui-button--size--auto ui-button--variant--default card__btn" href=""><span class="ui-button__icon-wrapper"><svg class="icon icon-arrow-line ui-button__icon" width="24" height="24"><use xlink:href="assets/images/sprites/sprite-mono.svg#arrow-line"></use></svg></span><span class="ui-button__content">Подробнее о проекте</span>
+                        </div>
+                      </header>
+                    </article>
+                  </div>
                 </div>
               </div>
             </div>
@@ -513,7 +554,7 @@
               </div>
             </div>
             <div class="footer__section footer__section--is-full-width">
-              <ul class="social-links">
+              <ul class="social-links footer__social-links">
                 <li class="social-links__item">
                   <a class="social-links__item-link" href="./" target="_blank">
                     <svg class="icon icon-yt" width="16" height="16">

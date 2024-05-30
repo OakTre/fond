@@ -1,24 +1,39 @@
-import Swiper, { Autoplay, Loop } from 'swiper/swiper-bundle'
+import gsap from "gsap";
 
-Swiper.use([Autoplay, Loop])
+export default function ticker() {
+  const elements = Array.from(document.querySelectorAll(".js-ticker"));
 
-export default () => {
-  const gallery = document.querySelector('.care__slider')
+  elements.forEach((element) => {
+    const mainTrack = element.querySelector(".js-ticker-track");
+    const innerTrack = element.querySelector(".js-ticker-inner-track");
+    if (!innerTrack || !mainTrack) return;
+    const items = Array.from(innerTrack.children);
+    const REPEAT_COUNT = 4;
 
-  if (!gallery) return
-
-  new Swiper(gallery, {
-    spaceBetween: 8,
-    slidesPerView: 'auto',
-    watchSlidesProgress: true,
-    loopedSlides: 16,
-    allowTouchMove: false,
-    loop: true,
-    loopAdditionalSlides: 16,
-    speed: 2000,
-    autoplay: {
-      delay: 0,
-      disableOnInteraction: true,
+    for (let i = 0; i < REPEAT_COUNT; i++) {
+      items.forEach((item) => {
+        innerTrack.appendChild(item.cloneNode(true));
+      });
     }
-  })
+
+    mainTrack.appendChild(innerTrack.cloneNode(true));
+    mainTrack.appendChild(innerTrack.cloneNode(true));
+
+    const innerTracks = Array.from(
+      document.querySelectorAll(".js-ticker-inner-track")
+    );
+
+    function setTickerAnimation(item) {
+      gsap.to(item, {
+        ease: "none",
+        xPercent: -100,
+        duration: 100,
+        repeat: -1,
+      });
+    }
+
+    innerTracks.forEach((innerTrack) => {
+      setTickerAnimation(innerTrack);
+    });
+  });
 }

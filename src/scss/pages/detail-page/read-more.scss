@@ -10,6 +10,9 @@
 
   &__heading {
     font: var(--font-h5);
+    @include mq(md) {
+      padding-left: 1.9rem;
+    }
   }
 
   &__nav {

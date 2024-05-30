@@ -10,7 +10,8 @@
     overflow: hidden;
 
     @include mq(md) {
-      height: 56rem;
+      height: 42rem;
+      border-radius: 3.2rem;
     }
   }
 

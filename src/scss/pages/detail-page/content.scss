@@ -194,7 +194,6 @@
           background-image: url("../images/quote2.svg");
         }
 
-
         &::after {
           content: none;
         }
@@ -209,7 +208,14 @@
     object-fit: contain;
 
     @include mq(lg) {
-      display: none;
+      width: 5.4rem;
+      height: 5.4rem;
+      border-radius: 0.8rem;
+      position: absolute;
+
+      left: 5rem;
+      top: 100%;
+      margin-top: -9rem;
     }
   }
 
@@ -238,8 +244,6 @@
     max-width: 41rem;
     color: var(--color-dark-grey);
 
-
-
     span {
       display: block;
       font: var(--font-text-16reg);
@@ -251,7 +255,7 @@
     }
 
     @include mq(md) {
-      padding-left: 3rem;
+      padding-left: 7rem;
     }
   }
 
@@ -272,6 +276,11 @@
 
     @include mq(sm) {
       height: 22rem;
+      width: auto;
+      width: calc(100% - 1.9rem * 2);
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 4rem;
     }
   }
 

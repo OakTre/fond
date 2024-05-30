@@ -1,35 +1,37 @@
-import Swiper, { Autoplay } from 'swiper/swiper-bundle'
+import Swiper, { Autoplay } from "swiper/swiper-bundle";
 
-Swiper.use(Autoplay)
+Swiper.use(Autoplay);
 
 export default () => {
-  const sliders = document.querySelectorAll('.projects-intro__slider')
+  const sliders = document.querySelectorAll(".projects-intro__slider");
 
-  if (sliders.length === 0) return
+  if (sliders.length === 0) return;
 
-  sliders.forEach(slider => {
-    const { center, speed } = slider.dataset
+  sliders.forEach((slider) => {
+    const { center, speed } = slider.dataset;
+
+    console.log("Slider", slider);
 
     new Swiper(slider, {
       spaceBetween: 8,
-      slidesPerView: 'auto',
-      direction: 'vertical',
+      slidesPerView: "auto",
+      direction: "vertical",
       centeredSlides: center,
       initialSlide: center ? 1 : 0,
       loop: true,
       autoplay: {
-        delay: '2500',
+        delay: "2500",
         disableOnInteraction: false,
         reverseDirection: !!center,
       },
       breakpoints: {
         280: {
-          direction: 'horizontal',
+          direction: "horizontal",
         },
         1199: {
-          direction: 'vertical',
-        }
-      }
-    })
-  })
-}
+          direction: "vertical",
+        },
+      },
+    });
+  });
+};

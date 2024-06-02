@@ -3,9 +3,25 @@
     display: flex;
     align-items: center;
     gap: 3.1rem;
+    @include mq(lg) {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+      align-items: stretch;
+    }
   }
 
   &__link {
     font: var(--font-links);
+  }
+}
+
+.nav__link {
+  @include mq(lg) {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 115%;
+    display: block;
   }
 }

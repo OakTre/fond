@@ -9,14 +9,17 @@ mixin header()
           a.header__link(href='https://bf-tatneft.ru/' target='_blank' data-green)
             +icon-mono('verificated')(width='16' height='16')
             | Гранты ПАО «Татнефть»
-          nav.header__nav.nav
-            ul.nav__list
-              li.nav__item
-                a.nav__link(href='./projects.html' data-link) Проекты
-              li.nav__item
-                a.nav__link(href='./' data-link) Контакты
-              li.nav__item
-                a.nav__link(href='https://bf-tatneft.ru/fond2/?3program' target='_blank' data-link) О конкурсах
-          a(href='tel:+7 (8553) 37-36-89' data-grey class='header__tel') +7 (8553) 37-36-89
+          .header__mobile-menu
+            nav.header__nav.nav
+              ul.nav__list
+                li.nav__item
+                  a.nav__link(href='./projects.html' data-link) Проекты
+                li.nav__item
+                  a.nav__link(href='./' data-link) Контакты
+                li.nav__item
+                  a.nav__link(href='https://bf-tatneft.ru/fond2/?3program' target='_blank' data-link) О конкурсах
+            a(href='tel:+7 (8553) 37-36-89' data-grey class='header__tel') +7 (8553) 37-36-89
           button.header__burger
-            +icon-mono('burger')(width='20' height='20')
+            span 
+            span 
+            span 

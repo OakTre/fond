@@ -1,5 +1,6 @@
 mixin footer()
-  footer.footer
+  - isWhiteBg = isGreyFooter ? 'footer--variant--grey' : ''
+  footer.footer(class=isWhiteBg)
     .site-container
       .footer__container
         .footer__section
@@ -22,7 +23,7 @@ mixin footer()
               a.footer__item(href='tel:+7 (8553) 45-69-06' data-link) +7 (8553) 45-69-06
           .footer__list
             .footer__item.footer__item--offset
-              | 423450, Респ. Татарстан, Альметьевский р-н, г.&nbsp;Альметьевск, ул. Заслонова, дом 20
+              | 423450, Респ. Татарстан, Альметьевский р-н,г.&nbsp;Альметьевск, ул. Заслонова, дом 20
             .footer__payment-info
               ul
                 li ИНН: 1644017196

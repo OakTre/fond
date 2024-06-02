@@ -121,3 +121,9 @@
     margin-left: auto;
   }
 }
+
+.footer--variant--grey {
+  .footer__container {
+    background-color: var(--color-light-grey);
+  }
+}

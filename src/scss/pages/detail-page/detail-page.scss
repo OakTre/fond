@@ -127,10 +127,13 @@
       @include mq(lg) {
         display: flex;
         overflow: auto;
-        padding-right: var(--container-padding);
-        margin-right: calc(-1 * var(--container-padding));
-        margin-bottom: 6rem;
+        margin: 0 calc(-1 * var(--container-padding));
+        padding-left: calc(1.9rem + var(--container-padding));
+        padding-right: calc(1.9rem + var(--container-padding));
         gap: var(--grid-offset);
+        margin-bottom: 4rem;
+        scroll-snap-type: x mandatory;
+        scroll-padding-left: calc(1.9rem + var(--container-padding));
 
         @include noScrollbar();
       }
@@ -231,4 +234,33 @@
 
 .detail-page__container--variant--second {
   position: relative;
+}
+
+.detail-page__block:has(.detail-page-content__quote--variant--green) {
+  @include mq(sm) {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+.detail-page__block:has(.comparison-image) {
+  @include mq(sm) {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+.detail-page-content__img {
+  @include mq(sm) {
+    width: 95%;
+    height: auto;
+
+    scroll-snap-align: start;
+
+    img {
+      object-fit: cover;
+      aspect-ratio: 313 / 220;
+      width: 100%;
+      height: auto;
+    }
+  }
 }

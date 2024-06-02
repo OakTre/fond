@@ -342,6 +342,16 @@
 .detail-page-content__quote--variant--green {
   @include mq(sm) {
     padding-top: 2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+
+    .detail-page-content__quote-author-text {
+      font-weight: 450;
+      font-size: 1.2rem;
+      line-height: 130%;
+      letter-spacing: -0.02em;
+      color: rgba(white, 0.6);
+    }
     &::before {
       position: static;
       display: block;

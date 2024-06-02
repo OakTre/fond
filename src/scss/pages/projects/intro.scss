@@ -43,7 +43,9 @@
     font: var(--font-h1);
     max-width: 81rem;
 
-    span,b,strong {
+    span,
+    b,
+    strong {
       color: var(--color-white-alpha50);
     }
 
@@ -79,6 +81,13 @@
     display: flex;
     gap: var(--grid-offset);
     margin-left: auto;
+    @include mq(sm) {
+      margin: 0;
+
+      .swiper {
+        margin: 0;
+      }
+    }
 
     picture {
       display: block;
@@ -112,5 +121,15 @@
       width: 10.8rem;
       height: 14rem;
     }
+  }
+}
+
+.projects-intro__slider:nth-child(even) {
+  position: relative;
+  top: calc(-1 * 33.5rem / 2 - 8px);
+  @include mq(sm) {
+    position: relative;
+    top: auto;
+    left: calc(-1 * 10.8rem / 2 - 8px);
   }
 }

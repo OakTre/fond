@@ -151,6 +151,8 @@
     @include mq(md) {
       border-radius: 3.2rem;
       margin-top: 3.2rem;
+      object-fit: cover;
+      aspect-ratio: 358 / 240;
     }
   }
 

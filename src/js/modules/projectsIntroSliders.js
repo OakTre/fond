@@ -12,12 +12,25 @@ export default () => {
 
     console.log("Slider", slider);
 
+    console.log("center", center);
+
+    const slides = Array.from(slider.querySelectorAll(".swiper-slide"));
+
+    const parent = slides[0]?.parentElement;
+    if (parent && slides.length) {
+      slides.forEach((slide) => {
+        parent.appendChild(slide.cloneNode(true));
+      });
+    }
+
     new Swiper(slider, {
       spaceBetween: 8,
       slidesPerView: "auto",
       direction: "vertical",
-      centeredSlides: center,
-      initialSlide: center ? 1 : 0,
+      centeredSlides: true,
+      // centeredSlides: center ? true : false,
+      // initialSlide: center ? 1 : 0,
+      loopAdditionalSlides: 3,
       loop: true,
       autoplay: {
         delay: "2500",

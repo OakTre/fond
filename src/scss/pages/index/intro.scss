@@ -57,7 +57,9 @@
     font: var(--font-h2);
     margin-bottom: 3.2rem;
 
-    span, b, strong {
+    span,
+    b,
+    strong {
       color: var(--color-white-alpha50);
     }
 
@@ -144,4 +146,46 @@
       display: none;
     }
   }
+}
+
+.index-intro__mobile-tag {
+  display: none;
+  @include mq(sm) {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2.4rem;
+  }
+}
+
+.index-intro__mobile-tag-icon {
+  flex-shrink: 0;
+  width: 4rem;
+  height: 4rem;
+  flex-shrink: 0;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  position: relative;
+}
+
+.index-intro__mobile-tag-icon-image {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.index-intro__mobile-tag-text {
+  height: 4rem;
+  white-space: nowrap;
+  padding: 0 1.6rem;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.2rem;
+  line-height: 135%;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 99.9rem;
+  display: flex;
+  align-items: center;
 }

@@ -3,8 +3,12 @@
   --bg: var(--color-white);
   --card-transiton: 0.4s ease;
   --br: 4.8rem;
-  --circle-1-bg: linear-gradient(179.92deg, #209670 30.57%, #189C73 99.93%);
-  --circle-2-bg: linear-gradient(161.2deg, #2A857E 13.79%, rgba(31, 155, 120, 0.58) 87.3%);
+  --circle-1-bg: linear-gradient(179.92deg, #209670 30.57%, #189c73 99.93%);
+  --circle-2-bg: linear-gradient(
+    161.2deg,
+    #2a857e 13.79%,
+    rgba(31, 155, 120, 0.58) 87.3%
+  );
   --f: var(--font-h7);
 
   position: relative;
@@ -110,7 +114,7 @@
   &__bg-circle-2 {
     position: absolute;
     border-radius: 50%;
-    transition: all .6s ease;
+    transition: all 0.6s ease;
     width: 44.9rem;
     height: 44.9rem;
   }
@@ -208,8 +212,12 @@
     &--is-green {
       --c: var(--color-white);
       --bg: var(--color-green);
-      --circle-1-bg: linear-gradient(179.92deg, #209670 30.57%, #189C73 99.93%);
-      --circle-2-bg: linear-gradient(161.2deg, #2A857E 13.79%, rgba(31, 155, 120, 0.58) 87.3%);
+      --circle-1-bg: linear-gradient(179.92deg, #209670 30.57%, #189c73 99.93%);
+      --circle-2-bg: linear-gradient(
+        161.2deg,
+        #2a857e 13.79%,
+        rgba(31, 155, 120, 0.58) 87.3%
+      );
       --c-descr: var(--color-white-alpha80) !important;
 
       &:hover {
@@ -398,7 +406,15 @@
 .card-wrapper {
   &:hover {
     .card {
-      transform: scale(.96);
+      transform: scale(0.96);
     }
   }
+}
+
+.card--variant--is-full-img .card__bg--is-image::after {
+  content: "";
+  position: absolute;
+  background: linear-gradient(360deg, rgba(0, 0, 0, 0) 77.5%, #000000 112.85%),
+    linear-gradient(179.26deg, rgba(0, 0, 0, 0) 79.21%, #000000 118.72%);
+  inset: 0;
 }

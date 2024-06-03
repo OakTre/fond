@@ -81,6 +81,10 @@
     display: flex;
     gap: var(--grid-offset);
     margin-left: auto;
+
+    .swiper-wrapper {
+      transition-timing-function: linear !important;
+    }
     @include mq(sm) {
       margin: 0;
 

@@ -27,7 +27,7 @@ export default function ticker() {
       gsap.to(item, {
         ease: "none",
         xPercent: -100,
-        duration: 100,
+        duration: 200,
         repeat: -1,
       });
     }

@@ -31,9 +31,11 @@ export default () => {
       // centeredSlides: center ? true : false,
       // initialSlide: center ? 1 : 0,
       loopAdditionalSlides: 3,
+      allowTouchMove: false,
       loop: true,
+      speed: 6000,
       autoplay: {
-        delay: "2500",
+        delay: "0",
         disableOnInteraction: false,
         reverseDirection: !!center,
       },

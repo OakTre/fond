@@ -77,7 +77,7 @@
     }
   }
 
-  &__info {
+  &__info-row {
     margin-top: auto;
     display: flex;
     gap: 3.2rem;
@@ -149,4 +149,16 @@
   align-items: center;
   flex-shrink: 0;
   gap: 0.8rem;
+}
+
+.care__inner-heading {
+  font-style: normal;
+  font-weight: 450;
+  font-size: 3.4rem;
+  line-height: 120%;
+  margin-bottom: 1.2rem;
+
+  @include mq(sm) {
+    font: var(--font-h2);
+  }
 }

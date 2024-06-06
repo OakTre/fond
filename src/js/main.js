@@ -14,6 +14,7 @@ import parallaxColumns from "./modules/parallaxColumns";
 import anchorLinks from "./modules/buttonUp";
 import initYtVideo from "./modules/initYtVideo";
 import burger from "./modules/burger";
+import fancybox from "./modules/fancybox";
 
 documentReady(() => {
   window.___YOUR_PROJECT___API = {};
@@ -32,6 +33,7 @@ documentReady(() => {
   anchorLinks();
   initYtVideo();
   burger();
+  fancybox();
 });
 
 window.addEventListener("load", () => {

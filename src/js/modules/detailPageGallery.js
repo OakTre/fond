@@ -1,17 +1,18 @@
-import Swiper, { Scrollbar } from 'swiper/swiper-bundle'
+import Swiper, { Scrollbar } from "swiper/swiper-bundle";
 
-Swiper.use(Scrollbar)
+Swiper.use(Scrollbar);
 export default () => {
-  const sliders = document.querySelectorAll('.detail-page__slider')
+  const sliders = document.querySelectorAll(".detail-page__slider");
 
-  if (sliders.length === 0) return
+  if (sliders.length === 0) return;
 
-  sliders.forEach(slider => {
+  sliders.forEach((slider) => {
     new Swiper(slider, {
       spaceBetween: 8,
-      slidesPerView: 'auto',
+      slidesPerView: "auto",
+      centerInsufficientSlides: true,
       scrollbar: {
-        el: slider.querySelector('.scroll-bar'),
+        el: slider.querySelector(".scroll-bar"),
         hide: true,
       },
       breakpoints: {
@@ -19,9 +20,9 @@ export default () => {
           slidesPerView: 1.1,
         },
         1024: {
-          slidesPerView: 'auto',
-        }
-      }
-    })
-  })
-}
+          slidesPerView: "auto",
+        },
+      },
+    });
+  });
+};

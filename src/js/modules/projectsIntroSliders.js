@@ -33,7 +33,7 @@ export default () => {
       loopAdditionalSlides: 3,
       allowTouchMove: false,
       loop: true,
-      speed: 6000,
+      speed: 12000,
       autoplay: {
         delay: "0",
         disableOnInteraction: false,

@@ -11,13 +11,13 @@
   padding-right: 7rem;
   overflow: hidden;
 
-  @include mq(lg) {
+  @include mq(sm) {
     flex-direction: column;
     height: auto;
     padding: 6.4rem 7.2rem;
   }
 
-  @include mq(md) {
+  @include mq(sm) {
     padding: 2rem;
     border-radius: 3.2rem;
     background-image: none;
@@ -33,7 +33,7 @@
     flex-direction: column;
     height: 100%;
 
-    @include mq(lg) {
+    @include mq(sm) {
       padding: 0;
       margin-bottom: 7rem;
     }
@@ -49,11 +49,11 @@
       color: var(--color-white-alpha50);
     }
 
-    @include mq(lg) {
+    @include mq(sm) {
       margin-bottom: 4rem;
     }
 
-    @include mq(md) {
+    @include mq(sm) {
       font: var(--font-h2);
     }
 
@@ -108,7 +108,7 @@
       }
     }
 
-    @include mq(lg) {
+    @include mq(sm) {
       flex-direction: column;
     }
   }

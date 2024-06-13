@@ -6,7 +6,7 @@
     grid-template-columns: 6fr 6fr;
     gap: var(--grid-offset);
 
-    @include mq(lg) {
+    @include mq(sm) {
       display: block;
       overflow: hidden;
     }
@@ -21,7 +21,7 @@
     flex-direction: column;
     min-height: 64rem;
 
-    @include mq(md) {
+    @include mq(sm) {
       padding: 2rem;
       border-radius: 3.2rem;
     }
@@ -38,7 +38,7 @@
         background-size: cover;
         background-position: center;
 
-        @include mq(md) {
+        @include mq(sm) {
           background-image: url("../images/index/block-bg-mobile.png");
         }
       }
@@ -46,7 +46,7 @@
       &--sliders {
         background-color: var(--color-light-grey);
 
-        @include mq(lg) {
+        @include mq(sm) {
           display: none;
         }
       }
@@ -117,7 +117,7 @@
         height: 100%;
       }
 
-      @include mq(lg) {
+      @include mq(sm) {
         display: block;
 
         .swiper-pagination {
@@ -142,7 +142,7 @@
     right: 7.2rem;
     z-index: 2;
 
-    @include mq(lg) {
+    @include mq(sm) {
       display: none;
     }
   }

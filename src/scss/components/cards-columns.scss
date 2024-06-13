@@ -14,7 +14,7 @@
     align-self: flex-start;
   }
 
-  @include mq(md) {
+  @include mq(sm) {
     display: none;
   }
 }
@@ -22,7 +22,7 @@
 .cards-columns-mobile {
   display: none;
 
-  @include mq(md) {
+  @include mq(sm) {
     display: grid;
     grid-template-columns: 3fr 3fr;
     gap: var(--grid-offset);

@@ -9,7 +9,7 @@
     object-fit: contain;
   }
 
-  @include mq(md) {
+  @include mq(sm) {
     width: 9.9rem;
   }
 }

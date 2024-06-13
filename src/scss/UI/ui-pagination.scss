@@ -36,6 +36,11 @@
       --c: var(--color-white);
     }
 
+    &:not(.ui-pagination__item--is-active):hover {
+      background: #e0e0e0;
+      border-color: #e0e0e0;
+    }
+
     &--variant {
       &--btn {
         &:first-child {

@@ -28,7 +28,7 @@
     top: 3.2rem;
     left: 3.2rem;
 
-    @include mq(md) {
+    @include mq(sm) {
       top: 2rem;
       left: 2rem;
     }
@@ -42,7 +42,7 @@
     flex-shrink: 0;
     transition: all var(--card-transiton);
 
-    @include mq(md) {
+    @include mq(sm) {
       padding: 2rem;
     }
   }
@@ -62,7 +62,7 @@
       }
     }
 
-    @include mq(md) {
+    @include mq(sm) {
       margin-bottom: 1.6rem;
     }
   }
@@ -78,7 +78,7 @@
 
     margin-bottom: 3.1rem;
 
-    @include mq(md) {
+    @include mq(sm) {
       margin-bottom: 2.9rem;
       font: var(--font-text-14);
     }
@@ -196,7 +196,7 @@
     }
   }
 
-  @include mq(md) {
+  @include mq(sm) {
     --br: 3.2rem;
     --f: var(--font-h7);
 
@@ -230,9 +230,31 @@
         }
       }
 
-      @include mq(md) {
+      @include mq(sm) {
         height: 38rem;
       }
+    }
+
+    &--is-light-green {
+      --bg: #e6f5f1;
+
+      .card__tag {
+        --c: #0aa373;
+        .ui-tag__content {
+          background: rgba(255, 255, 255, 0.01);
+          border-color: rgba(10, 163, 115, 0.2);
+        }
+      }
+      --circle-2-bg: linear-gradient(
+        179.92deg,
+        rgba(32, 150, 112, 0.1) 30.57%,
+        rgba(24, 156, 115, 0.1) 99.93%
+      );
+      --circle-1-bg: linear-gradient(
+        161.2deg,
+        rgba(42, 133, 126, 0.1) 13.79%,
+        rgba(31, 155, 120, 0.1) 87.3%
+      );
     }
 
     &--is-dark {
@@ -242,7 +264,7 @@
       --circle-2-bg: linear-gradient(159.28deg, #282828 37.79%, #303030 91.47%);
       --c-descr: var(--color-white-alpha80) !important;
 
-      @include mq(md) {
+      @include mq(sm) {
         height: 36rem;
       }
     }
@@ -318,7 +340,7 @@
         }
       }
 
-      @include mq(md) {
+      @include mq(sm) {
         --f: var(--font-h5);
 
         padding: 2rem;
@@ -339,7 +361,7 @@
         }
       }
 
-      @include mq(md) {
+      @include mq(sm) {
         padding: 2rem;
       }
     }
@@ -349,7 +371,7 @@
 
       padding: 3.2rem;
 
-      @include mq(md) {
+      @include mq(sm) {
         padding: 2rem;
       }
     }
@@ -368,11 +390,11 @@
     &--small {
       height: 56rem;
 
-      @include mq(lg) {
+      @include mq(sm) {
         height: 50rem;
       }
 
-      @include mq(md) {
+      @include mq(sm) {
         height: 36rem;
       }
     }
@@ -380,11 +402,11 @@
     &--medium {
       height: 70rem;
 
-      @include mq(lg) {
+      @include mq(sm) {
         height: 64rem;
       }
 
-      @include mq(md) {
+      @include mq(sm) {
         height: 38rem;
       }
     }
@@ -392,11 +414,11 @@
     &--max {
       height: 78rem;
 
-      @include mq(lg) {
+      @include mq(sm) {
         height: 72rem;
       }
 
-      @include mq(md) {
+      @include mq(sm) {
         height: 43.5rem;
       }
     }

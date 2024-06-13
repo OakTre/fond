@@ -3,7 +3,7 @@
     display: flex;
     align-items: center;
     gap: 3.1rem;
-    @include mq(lg) {
+    @include mq(sm) {
       display: flex;
       flex-direction: column;
       gap: 2rem;
@@ -17,7 +17,7 @@
 }
 
 .nav__link {
-  @include mq(lg) {
+  @include mq(sm) {
     font-style: normal;
     font-weight: 500;
     font-size: 16px;

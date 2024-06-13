@@ -10,7 +10,7 @@
 
   &__heading {
     font: var(--font-h5);
-    @include mq(md) {
+    @include mq(sm) {
       padding-left: 1.9rem;
     }
   }
@@ -25,7 +25,7 @@
       }
     }
 
-    @include mq(md) {
+    @include mq(sm) {
       display: none;
     }
   }

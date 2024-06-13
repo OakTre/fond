@@ -19,7 +19,7 @@ export default () => {
         280: {
           slidesPerView: 1.1,
         },
-        1024: {
+        768: {
           slidesPerView: "auto",
         },
       },

@@ -42,28 +42,26 @@
   --font-links450: 450 1.6rem/120% var(--main-ff);
   --font-links500: 500 1.6rem/115% var(--main-ff);
 
-
-
   /* colors */
-  --color-black: #1B1D1C;
+  --color-black: #1b1d1c;
   --color-white: #fff;
   --color-brown: #313131;
-  --color-red: #DD3C3B;
-  --color-green: #0AA373;
-  --color-bright-green: #2DFFB3;
-  --color-light-green: #CEEDE3;
-  --color-light-green2: #C2E8DC;
-  --color-light-green1: #E6F5F1;
-  --color-dark-grey: #9F9F9F;
-  --color-light-grey: #F5F5F5;
+  --color-red: #dd3c3b;
+  --color-green: #0aa373;
+  --color-bright-green: #2dffb3;
+  --color-light-green: #ceede3;
+  --color-light-green2: #c2e8dc;
+  --color-light-green1: #e6f5f1;
+  --color-dark-grey: #9f9f9f;
+  --color-light-grey: #f5f5f5;
   --color-bg: var(--color-light-grey);
-  --color-white-alpha80: #FFFFFFCC;
-  --color-white-alpha50: #FFFFFF80;
-  --color-white-alpha10: #FFFFFF1A;
-  --color-white-alpha1: #FFFFFF03;
-  --color-green-alpha20: #0AA37333;
+  --color-white-alpha80: #ffffffcc;
+  --color-white-alpha50: #ffffff80;
+  --color-white-alpha10: #ffffff1a;
+  --color-white-alpha1: #ffffff03;
+  --color-green-alpha20: #0aa37333;
   --color-brown-alpha15: #31313126;
-  --color-brown-alpha5: #3131310D;
+  --color-brown-alpha5: #3131310d;
 
   --color-grey-600: #99a5b0;
   --color-grey-300: #eff1f5;
@@ -83,7 +81,7 @@
 @import "./components/**/*";
 @import "./pages/**/*";
 
-@include mq(md) {
+@include mq(sm) {
   :root {
     --header-height: 6.4rem;
     --container-padding: 2rem;

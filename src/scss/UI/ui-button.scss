@@ -45,9 +45,10 @@
     background-color: var(--bg);
     color: var(--c);
     border-radius: 99.9rem;
-    transition: background-color var(--btn-transition), color var(--btn-transition);
+    transition: background-color var(--btn-transition),
+      color var(--btn-transition);
 
-    @include mq(md) {
+    @include mq(sm) {
       padding: 1.2rem 1.6rem;
       height: var(--icon-wrap-h);
     }
@@ -70,7 +71,7 @@
         border: 1px solid var(--bc);
         padding: 1.2rem 1.6rem;
 
-        @include mq(md) {
+        @include mq(sm) {
           padding: 1rem 1.4rem;
         }
       }
@@ -105,7 +106,7 @@
         --bg: var(--color-light-green2);
       }
 
-      @include mq(md) {
+      @include mq(sm) {
         .ui-button__icon-wrapper {
           display: none;
         }
@@ -127,7 +128,7 @@
     }
   }
 
-  @include mq(md) {
+  @include mq(sm) {
     --icon-wrap-w: 4rem;
     --icon-wrap-h: 4rem;
     --icon-w: 1.6rem;

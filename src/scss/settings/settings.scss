@@ -8,18 +8,20 @@
 html {
   font-size: 10px;
   line-height: 1.2;
+  font-size: 9px;
 
-  @include mq(custom, max, 1536) {
-    font-size: 9px;
-  }
+  font-size: clamp(2px, 0.58vw, 125px);
+  // @include mq(custom, max, 1536) {
+  //   font-size: 9px;
+  // }
 
-  @include mq(xl) {
-    font-size: 8px;
-  }
+  // @include mq(sm) {
+  //   font-size: 8px;
+  // }
 
-  @include mq(md) {
-    font-size: 9px;
-  }
+  // @include mq(sm) {
+  //   font-size: 9px;
+  // }
 
   @include mq(sm) {
     font-size: 10px;

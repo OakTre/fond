@@ -6,13 +6,17 @@
     grid-template-columns: 3fr 9fr;
     gap: var(--grid-offset);
 
+    &.detail-page__images {
+      grid-template-columns: 3fr 6fr 3fr;
+    }
+
     &--variant {
       &--second {
         grid-template-columns: 3fr 6fr 3fr;
       }
     }
 
-    @include mq(lg) {
+    @include mq(sm) {
       display: block;
     }
   }
@@ -42,14 +46,14 @@
         opacity: 1;
       }
 
-      @include mq(lg) {
+      @include mq(sm) {
         display: none;
       }
     }
   }
 
   &__block {
-    @include mq(md) {
+    @include mq(sm) {
       padding: 0 1.9rem;
     }
     &--is-flex {
@@ -60,7 +64,7 @@
   }
 
   &__social-wrapper {
-    @include mq(lg) {
+    @include mq(sm) {
       display: flex;
     }
   }
@@ -68,14 +72,14 @@
   &__social-links {
     margin-top: auto;
 
-    @include mq(lg) {
+    @include mq(sm) {
       display: none;
     }
 
     &--is-mobile {
       display: none;
 
-      @include mq(lg) {
+      @include mq(sm) {
         display: flex;
         margin-left: auto;
       }
@@ -91,7 +95,7 @@
     top: 11.2rem;
     left: 7.2rem;
 
-    @include mq(md) {
+    @include mq(sm) {
       top: 5.2rem;
       left: 2rem;
     }
@@ -117,14 +121,14 @@
   }
 
   &__images {
-    @include mq(lg) {
+    @include mq(sm) {
       display: none;
     }
 
     &--is-mobile {
       display: none;
 
-      @include mq(lg) {
+      @include mq(sm) {
         display: flex;
         overflow: auto;
         margin: 0 calc(-1 * var(--container-padding));
@@ -151,7 +155,7 @@
     border-radius: 4.8rem;
     margin-top: 5rem;
 
-    @include mq(md) {
+    @include mq(sm) {
       border-radius: 3.2rem;
       margin-top: 3.2rem;
       object-fit: cover;
@@ -166,7 +170,7 @@
     .swiper-slide {
       width: auto;
 
-      @include mq(md) {
+      @include mq(sm) {
         width: 100%;
       }
     }
@@ -188,7 +192,7 @@
 
     height: 50rem;
 
-    @include mq(md) {
+    @include mq(sm) {
       border-radius: 3.2rem;
       width: 100%;
       aspect-ratio: 313 / 220;
@@ -205,20 +209,20 @@
     color: var(--color-white);
     pointer-events: none;
 
-    @include mq(lg) {
+    @include mq(sm) {
       display: none;
     }
   }
 }
 
 .detail-page__social-links--is-mobile {
-  @include mq(md) {
+  @include mq(sm) {
     gap: 0;
   }
 }
 
 .detail-page__social-links--is-mobile .social-links__item-link {
-  @include mq(md) {
+  @include mq(sm) {
     border: none;
     width: 3.2rem;
     height: 3.2rem;

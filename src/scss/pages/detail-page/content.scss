@@ -1,7 +1,7 @@
 .detail-page-content {
   margin-top: 8rem;
 
-  @include mq(md) {
+  @include mq(sm) {
     margin-top: 6rem;
   }
 
@@ -19,7 +19,7 @@
     max-width: 79.6rem;
     margin-bottom: 6rem;
 
-    @include mq(md) {
+    @include mq(sm) {
       margin-bottom: 4rem;
     }
 
@@ -31,7 +31,7 @@
   &__img {
     width: 100%;
 
-    @include mq(lg) {
+    @include mq(sm) {
       width: 80%;
       height: 100%;
       display: flex;
@@ -46,7 +46,7 @@
       margin-bottom: 6rem;
       object-fit: contain;
 
-      @include mq(lg) {
+      @include mq(sm) {
         height: 62rem;
         flex-shrink: 0;
         object-fit: cover;
@@ -54,7 +54,7 @@
         margin-bottom: 0;
       }
 
-      @include mq(md) {
+      @include mq(sm) {
         height: 43rem;
       }
 
@@ -76,7 +76,7 @@
       font: var(--font-text-14);
       opacity: 0.5;
 
-      @include mq(lg) {
+      @include mq(sm) {
         flex-shrink: 0;
       }
     }
@@ -86,7 +86,7 @@
     max-width: 79.6rem;
     margin-bottom: 6rem;
 
-    @include mq(md) {
+    @include mq(sm) {
       margin-bottom: 4rem;
     }
 
@@ -105,14 +105,14 @@
         border: 1px solid var(--color-green);
         content: "";
 
-        @include mq(md) {
+        @include mq(sm) {
           top: 0.6rem;
           width: 0.8rem;
           height: 0.8rem;
         }
       }
 
-      @include mq(md) {
+      @include mq(sm) {
         padding-left: 3rem;
       }
     }
@@ -133,7 +133,7 @@
       opacity: 0.3;
       content: "";
 
-      @include mq(md) {
+      @include mq(sm) {
         display: none;
       }
     }
@@ -150,7 +150,7 @@
       background-position: center;
       content: "";
 
-      @include mq(md) {
+      @include mq(sm) {
         top: 1.4rem;
         left: 50%;
         width: 1.8rem;
@@ -159,7 +159,7 @@
       }
     }
 
-    @include mq(md) {
+    @include mq(sm) {
       padding-top: 4.2rem;
       padding-bottom: 2rem;
       border-top: 1px solid var(--color-light-green);
@@ -207,7 +207,7 @@
     height: 22.4rem;
     object-fit: contain;
 
-    @include mq(lg) {
+    @include mq(sm) {
       display: none;
     }
   }
@@ -222,7 +222,7 @@
       display: inline-block;
       content: "";
 
-      @include mq(md) {
+      @include mq(sm) {
         width: 3rem;
       }
 
@@ -251,7 +251,7 @@
       }
     }
 
-    @include mq(md) {
+    @include mq(sm) {
       padding-left: 7rem;
     }
     @include mq(sm) {
@@ -270,7 +270,7 @@
     margin-bottom: 6rem;
     aspect-ratio: 16/9;
 
-    @include mq(md) {
+    @include mq(sm) {
       border-radius: 3.2rem;
     }
 
@@ -294,7 +294,7 @@
     object-fit: cover;
     border-radius: 4.8rem;
 
-    @include mq(md) {
+    @include mq(sm) {
       border-radius: 3.2rem;
     }
 
@@ -311,7 +311,7 @@
 
 .detail-page-content__quote-mobile-img {
   display: none;
-  @include mq(md) {
+  @include mq(sm) {
     display: block;
     flex-shrink: 0;
     align-self: center;

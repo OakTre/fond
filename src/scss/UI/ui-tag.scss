@@ -27,7 +27,7 @@
     stroke: currentColor;
     stroke-width: 1.2px;
 
-    @include mq(md) {
+    @include mq(sm) {
       width: 1.6rem;
       height: 1.6rem;
     }
@@ -41,12 +41,12 @@
     color: var(--c);
     backdrop-filter: blur(55px);
 
-    @include mq(md) {
+    @include mq(sm) {
       padding: 0.4rem 1.6rem;
     }
   }
 
-  @include mq(md) {
+  @include mq(sm) {
     --icon-size: 4rem;
     --f: 400 1.2rem/135% var(--main-ff);
   }

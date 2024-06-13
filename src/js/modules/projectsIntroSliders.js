@@ -43,7 +43,7 @@ export default () => {
         280: {
           direction: "horizontal",
         },
-        1199: {
+        768: {
           direction: "vertical",
         },
       },

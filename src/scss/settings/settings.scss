@@ -10,7 +10,10 @@ html {
   line-height: 1.2;
   font-size: 9px;
 
-  font-size: clamp(2px, 0.58vw, 125px);
+  @include mq("custom", max, 1980) {
+    font-size: clamp(2px, 0.58vw, 125px);
+  }
+
   // @include mq(custom, max, 1536) {
   //   font-size: 9px;
   // }
@@ -176,6 +179,10 @@ img {
   max-width: calc(160rem + (var(--container-padding) * 2));
   margin: 0 auto;
   padding: 0 var(--container-padding);
+
+  @include mq(sm) {
+    max-width: calc(500px + (var(--container-padding) * 2));
+  }
 }
 
 .page-wrapper {

@@ -36,8 +36,7 @@ export const watch = gulp.series(
     sassWatch,
     assetsWatch,
     imagesWatch,
-    spritesWatch,
-    squosh,
+    spritesWatch
   ),
 );
 

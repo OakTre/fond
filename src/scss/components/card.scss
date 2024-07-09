@@ -373,6 +373,14 @@
 
       @include mq(sm) {
         padding: 2rem;
+
+        .card__descr-label {
+          font: var(--font-text-24);
+
+          span {
+            font: var(--font-nums40);
+          }
+        }
       }
     }
 
@@ -382,6 +390,34 @@
       .card__btn {
         --bg: var(--color-white);
         --icon-bg: var(--color-white);
+      }
+    }
+
+    &--is-image-fullscreen {
+      padding: 0;
+
+      .card__image-icon-wrapper {
+        padding: 4rem 0 0;
+
+        @include mq(sm) {
+          padding: 2rem 0 0;
+        }
+      }
+
+      .card__descr-label {
+        padding: 0 3.2rem 0;
+
+        @include mq(sm) {
+          padding: 0 2rem 0;
+        }
+      }
+
+      .card__descr {
+        padding: 0 3.2rem 3.2rem;
+
+        @include mq(sm) {
+          padding: 0 2rem 2rem;
+        }
       }
     }
   }

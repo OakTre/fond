@@ -1,0 +1,72 @@
+mixin cards-list-mobile-main()
+  .cards-columns-mobile
+    +card-simple({
+      label: '<span>1326</span>',
+      text: 'Проектов поддержано благотворительным фондом ПАО «Татнефть»'
+    })
+    +card-full-image({
+      img: 'student.jpg',
+      title: 'Образование и наука',
+      btnLabel: 'Подробнее о науке',
+      size: 'medium'
+    })
+    +card-image-icon({
+      title: 'Инклюзивная танцевальная школа Рубаха',
+      text: 'В первый день зимы, 1 декабря 2022 года, в стенах' +
+        'нашего Дворца культуры прошел Всероссийский фестиваль интегрального' +
+        'творчества для людей с ограниченными возможностями здоровья — «ЛУЧ — 2022.',
+      btnLabel: 'Подробнее о проекте',
+      tagLabel: 'Культура'
+    })
+    +card-full-image({
+      img: 'card-orkestr.jpg',
+      title: 'Культура',
+      btnLabel: 'Подробнее о культуре',
+      size: 'small'
+    })
+    +card-simple({
+      img: 'map.png',
+      label: '<span>15</span> регионов',
+      text: 'география конкурса',
+      icon: 'pin'
+    }).card--variant--is-light-green.card--variant--is-image-fullscreen
+    +card-full-image({
+      img: 'people.jpg',
+      title: 'Люди',
+      btnLabel: 'Подробнее о людях',
+      size: 'small'
+    })
+    +card-simple-green({
+      img: 'trophy.svg',
+      label: '<span>10</span>&nbsp;номинаций',
+      text: 'Разработано благотворительным фондом ПАО «Татнефть» для конкурсов и грантов',
+      href: './'
+    })
+    +card-full-image({
+      img: 'field.jpg',
+      title: 'Развитие территории и экология',
+      btnLabel: 'Подробнее об экологии',
+      size: 'max'
+    })
+    +card-simple({
+      label: '<span>7681</span> заявка',
+      text: 'Подана участниками на участие в конкурсах социальных инициатив и грантов'
+    })
+    +card-full-image({
+      img: 'teacher.jpg',
+      title: 'Инклюзия',
+      btnLabel: 'Подробнее об инклюзии',
+      size: 'max'
+    })
+    +card-simple-dark({
+      img: 'ruble2.png',
+      label: '<span>3,5</span>&nbsp;млрд руб.',
+      text: 'Общая сумма выплат Фондом участникам благотворительных программ',
+      href: './'
+    })
+    +card-full-image({
+      img: 'card-image-girl2.jpg',
+      title: 'Здравоохранение и спорт',
+      btnLabel: 'Подробнее о cпорте',
+      size: 'max'
+    })

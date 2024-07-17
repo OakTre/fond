@@ -23,8 +23,8 @@ export default () => {
   const tl = gsap.timeline({
     scrollTrigger: {
       trigger: container,
-      start: 'top top',
-      end: '70% top',
+      start: 'top center',
+      end: 'bottom bottom',
       scrub: 0.8,
       pinSpacing: false
     }
